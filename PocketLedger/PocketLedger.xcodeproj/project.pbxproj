@@ -13,6 +13,7 @@
 		16B355172BA3FAC50014F307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B355162BA3FAC50014F307 /* Preview Assets.xcassets */; };
 		16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3551F2BA3FAF90014F307 /* CategorizationView.swift */; };
 		16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B355212BA3FB080014F307 /* AnalysisView.swift */; };
+		CC73D9F42BA4D8980016E6F9 /* AppEntry in Resources */ = {isa = PBXBuildFile; fileRef = CC73D9F22BA4D8980016E6F9 /* AppEntry */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		16B355162BA3FAC50014F307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16B3551F2BA3FAF90014F307 /* CategorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizationView.swift; sourceTree = "<group>"; };
 		16B355212BA3FB080014F307 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		CC73D9F22BA4D8980016E6F9 /* AppEntry */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = AppEntry; path = PocketLedger/AppEntry; sourceTree = SOURCE_ROOT; };
+		CC73D9FA2BA4D8AE0016E6F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,8 @@
 		16B3550E2BA3FAC40014F307 /* PocketLedger */ = {
 			isa = PBXGroup;
 			children = (
+				CC73D9F52BA4D8AE0016E6F9 /* module */,
+				CC73D9F22BA4D8980016E6F9 /* AppEntry */,
 				16B3551E2BA3FADD0014F307 /* Categorization */,
 				16B3551D2BA3FACE0014F307 /* gptAnalysis */,
 				16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */,
@@ -87,6 +92,46 @@
 				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 			);
 			path = Categorization;
+			sourceTree = "<group>";
+		};
+		CC73D9F52BA4D8AE0016E6F9 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				CC73D9F62BA4D8AE0016E6F9 /* scan */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		CC73D9F62BA4D8AE0016E6F9 /* scan */ = {
+			isa = PBXGroup;
+			children = (
+				CC73D9F72BA4D8AE0016E6F9 /* controller */,
+				CC73D9F82BA4D8AE0016E6F9 /* model */,
+				CC73D9F92BA4D8AE0016E6F9 /* view */,
+			);
+			path = scan;
+			sourceTree = "<group>";
+		};
+		CC73D9F72BA4D8AE0016E6F9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CC73D9F82BA4D8AE0016E6F9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CC73D9F92BA4D8AE0016E6F9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CC73D9FA2BA4D8AE0016E6F9 /* MainViewController.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +194,7 @@
 			files = (
 				16B355172BA3FAC50014F307 /* Preview Assets.xcassets in Resources */,
 				16B355142BA3FAC50014F307 /* Assets.xcassets in Resources */,
+				CC73D9F42BA4D8980016E6F9 /* AppEntry in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
