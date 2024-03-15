@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'Pocket Ledger' in project 'Pocket Ledger' (no dependencies)
