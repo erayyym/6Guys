@@ -51,6 +51,8 @@
 		162AB3E62BA3E27900CFE9B5 /* Pocket Ledger */ = {
 			isa = PBXGroup;
 			children = (
+				67A0F8FC2BA3E6AD0045205C /* gptAnalysis */,
+				67A0F8FB2BA3E6A00045205C /* categorization  */,
 				162AB3E72BA3E27900CFE9B5 /* Pocket_LedgerApp.swift */,
 				162AB3E92BA3E27900CFE9B5 /* ContentView.swift */,
 				162AB3EB2BA3E27900CFE9B5 /* Assets.xcassets */,
@@ -65,6 +67,20 @@
 				162AB3EE2BA3E27900CFE9B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67A0F8FB2BA3E6A00045205C /* categorization  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "categorization ";
+			sourceTree = "<group>";
+		};
+		67A0F8FC2BA3E6AD0045205C /* gptAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gptAnalysis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

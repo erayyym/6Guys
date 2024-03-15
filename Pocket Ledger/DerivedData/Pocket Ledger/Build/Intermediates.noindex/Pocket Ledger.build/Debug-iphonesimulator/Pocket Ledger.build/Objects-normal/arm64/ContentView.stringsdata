@@ -1,0 +1,12 @@
+{
+  "source": "/Users/carolmyr/pocketLe/Pocket Ledger/Pocket Ledger/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Hello, world!"
+      }
+    ]
+  },
+  "version": 1
+}
