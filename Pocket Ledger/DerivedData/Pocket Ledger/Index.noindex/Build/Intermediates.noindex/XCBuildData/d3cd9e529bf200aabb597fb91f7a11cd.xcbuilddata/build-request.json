@@ -15,24 +15,17 @@
   "hideShellScriptEnvironment" : false,
   "parameters" : {
     "action" : "indexbuild",
-    "activeArchitecture" : "undefined_arch",
+    "activeArchitecture" : "arm64",
     "activeRunDestination" : {
-      "disableOnlyActiveArch" : true,
-      "platform" : "iphoneos",
-      "sdk" : "iphoneos17.2",
-      "sdkVariant" : "iphoneos",
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.2",
+      "sdkVariant" : "iphonesimulator",
       "supportedArchitectures" : [
-        "armv4t",
-        "armv5",
-        "armv6",
-        "armv7",
-        "armv7f",
-        "armv7s",
-        "armv7k",
         "arm64",
-        "arm64e"
+        "x86_64"
       ],
-      "targetArchitecture" : "undefined_arch"
+      "targetArchitecture" : "arm64"
     },
     "arenaInfo" : {
       "buildIntermediatesPath" : "/Users/carolmyr/pocketLe/Pocket Ledger/DerivedData/Pocket Ledger/Index.noindex/Build/Intermediates.noindex",
