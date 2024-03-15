@@ -13,6 +13,7 @@
 		16B355172BA3FAC50014F307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B355162BA3FAC50014F307 /* Preview Assets.xcassets */; };
 		16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3551F2BA3FAF90014F307 /* CategorizationView.swift */; };
 		16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B355212BA3FB080014F307 /* AnalysisView.swift */; };
+		CC0EBD222BA4E02200B40430 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD212BA4E02200B40430 /* ScanViewController.swift */; };
 		CC73D9F42BA4D8980016E6F9 /* AppEntry in Resources */ = {isa = PBXBuildFile; fileRef = CC73D9F22BA4D8980016E6F9 /* AppEntry */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		16B355162BA3FAC50014F307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16B3551F2BA3FAF90014F307 /* CategorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizationView.swift; sourceTree = "<group>"; };
 		16B355212BA3FB080014F307 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		CC0EBD212BA4E02200B40430 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		CC73D9F22BA4D8980016E6F9 /* AppEntry */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = AppEntry; path = PocketLedger/AppEntry; sourceTree = SOURCE_ROOT; };
 		CC73D9FA2BA4D8AE0016E6F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				CC73D9FA2BA4D8AE0016E6F9 /* MainViewController.swift */,
+				CC0EBD212BA4E02200B40430 /* ScanViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */,
 				16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */,
+				CC0EBD222BA4E02200B40430 /* ScanViewController.swift in Sources */,
 				16B355122BA3FAC40014F307 /* ContentView.swift in Sources */,
 				16B355102BA3FAC40014F307 /* PocketLedgerApp.swift in Sources */,
 			);
