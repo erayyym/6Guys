@@ -13,6 +13,9 @@
 		16B355172BA3FAC50014F307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B355162BA3FAC50014F307 /* Preview Assets.xcassets */; };
 		16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3551F2BA3FAF90014F307 /* CategorizationView.swift */; };
 		16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B355212BA3FB080014F307 /* AnalysisView.swift */; };
+		4702852F2BA8C09B00EE5814 /* MonthlyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702852E2BA8C09B00EE5814 /* MonthlyReportView.swift */; };
+		470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470285312BA8C91A00EE5814 /* PersistenceController.swift */; };
+		470285342BA8C9EF00EE5814 /* ReceiptModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470285332BA8C9EF00EE5814 /* ReceiptModels.swift */; };
 		CC0EBD242BA7CE2A00B40430 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD232BA7CE2A00B40430 /* MainView.swift */; };
 		CC0EBD262BA7CE7000B40430 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD252BA7CE7000B40430 /* ScanView.swift */; };
 		CC0EBD282BA7CF2F00B40430 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */; };
@@ -30,6 +33,9 @@
 		16B355162BA3FAC50014F307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16B3551F2BA3FAF90014F307 /* CategorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizationView.swift; sourceTree = "<group>"; };
 		16B355212BA3FB080014F307 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		4702852E2BA8C09B00EE5814 /* MonthlyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportView.swift; sourceTree = "<group>"; };
+		470285312BA8C91A00EE5814 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		470285332BA8C9EF00EE5814 /* ReceiptModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModels.swift; sourceTree = "<group>"; };
 		CC0EBD232BA7CE2A00B40430 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CC0EBD252BA7CE7000B40430 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
@@ -82,8 +88,10 @@
 				CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */,
 				CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */,
 				16B355132BA3FAC50014F307 /* Assets.xcassets */,
+				470285302BA8C90500EE5814 /* model */,
 				16B355152BA3FAC50014F307 /* Preview Content */,
 				CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */,
+				4702852E2BA8C09B00EE5814 /* MonthlyReportView.swift */,
 			);
 			path = PocketLedger;
 			sourceTree = "<group>";
@@ -109,6 +117,15 @@
 			children = (
 			);
 			path = Categorization;
+			sourceTree = "<group>";
+		};
+		470285302BA8C90500EE5814 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				470285312BA8C91A00EE5814 /* PersistenceController.swift */,
+				470285332BA8C9EF00EE5814 /* ReceiptModels.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		CC0EBD2A2BA7D08F00B40430 /* Frameworks */ = {
@@ -191,12 +208,15 @@
 			files = (
 				CC0EBD262BA7CE7000B40430 /* ScanView.swift in Sources */,
 				16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */,
+				470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */,
 				CC0EBD242BA7CE2A00B40430 /* MainView.swift in Sources */,
 				CC0EBD2E2BA7D23500B40430 /* UIImage+Extension.swift in Sources */,
 				16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */,
 				CC1C58B62BA7C3FA000E1518 /* ImagePicker.swift in Sources */,
 				CC0EBD302BA7D2A200B40430 /* Configuration.swift in Sources */,
 				16B355122BA3FAC40014F307 /* ContentView.swift in Sources */,
+				470285342BA8C9EF00EE5814 /* ReceiptModels.swift in Sources */,
+				4702852F2BA8C09B00EE5814 /* MonthlyReportView.swift in Sources */,
 				16B355102BA3FAC40014F307 /* PocketLedgerApp.swift in Sources */,
 				CC0EBD282BA7CF2F00B40430 /* ScanViewModel.swift in Sources */,
 			);
@@ -332,7 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = TL3TF782MY;
+				DEVELOPMENT_TEAM = YBH373JJDN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -346,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.pocketledger;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.owenkani;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -362,7 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = TL3TF782MY;
+				DEVELOPMENT_TEAM = YBH373JJDN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -376,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.pocketledger;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.owenkani;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
