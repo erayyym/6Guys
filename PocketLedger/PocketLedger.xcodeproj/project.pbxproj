@@ -16,6 +16,7 @@
 		4702852F2BA8C09B00EE5814 /* MonthlyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702852E2BA8C09B00EE5814 /* MonthlyReportView.swift */; };
 		470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470285312BA8C91A00EE5814 /* PersistenceController.swift */; };
 		470285342BA8C9EF00EE5814 /* ReceiptModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470285332BA8C9EF00EE5814 /* ReceiptModels.swift */; };
+		6765990C2BA8FF670044F983 /* gptapi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765990B2BA8FF670044F983 /* gptapi.swift */; };
 		CC0EBD242BA7CE2A00B40430 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD232BA7CE2A00B40430 /* MainView.swift */; };
 		CC0EBD262BA7CE7000B40430 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD252BA7CE7000B40430 /* ScanView.swift */; };
 		CC0EBD282BA7CF2F00B40430 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */; };
@@ -36,6 +37,7 @@
 		4702852E2BA8C09B00EE5814 /* MonthlyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportView.swift; sourceTree = "<group>"; };
 		470285312BA8C91A00EE5814 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		470285332BA8C9EF00EE5814 /* ReceiptModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModels.swift; sourceTree = "<group>"; };
+		6765990B2BA8FF670044F983 /* gptapi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gptapi.swift; sourceTree = "<group>"; };
 		CC0EBD232BA7CE2A00B40430 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CC0EBD252BA7CE7000B40430 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				470285312BA8C91A00EE5814 /* PersistenceController.swift */,
 				470285332BA8C9EF00EE5814 /* ReceiptModels.swift */,
+				6765990B2BA8FF670044F983 /* gptapi.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6765990C2BA8FF670044F983 /* gptapi.swift in Sources */,
 				CC0EBD262BA7CE7000B40430 /* ScanView.swift in Sources */,
 				16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */,
 				470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */,

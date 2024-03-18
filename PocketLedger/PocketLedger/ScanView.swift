@@ -17,6 +17,7 @@ struct ScanView: View {
     @State private var recepit: Recepit = Recepit()
     @State private var receiptItems: [RecepitItem] = []
     @State private var names: [String] = []
+    @State var answerlist: [String] = []
     @State private var recognizedText = ""
     @State var image: UIImage?
     @State private var showingActionSheet = false
@@ -109,6 +110,7 @@ struct ScanView: View {
                 Button("Save") {
                     showingSubmitView = true
                     //这里加上生成cate的function，更新cate gptpart
+                    gptCate()
                 }
             }
         }
@@ -247,6 +249,52 @@ struct ScanView: View {
         
         return items
     }
+    
+    func gptCate(){
+            /*1. 所有name放出来
+             2. name 加上问题发给gpt
+             3. gpt的回答放到list里
+             4. gpt的回答更新stuct cate的value
+             */
+            
+            let name = receiptItems.map{$0.name}
+            let namestr = name.joined(separator: ",")
+            print(namestr)
+            let questionstr = "Here are a list of object name (\(namestr)), please based on (\(categories.joined(separator: ","))) to categories those object.(different name are seprate by , ) please return me just the answer of the categories of those object and seprate them using , just like how I give those objectname and categoriest to you. finally only give me the list of cotegories in this form:Drink,Drink,Electronics"
+            
+            print(questionstr)
+            let gGe = OpenAI()
+            gGe.ask(question: questionstr){ answer in
+                if let answer = answer {
+                    print("The answer is: \(answer)")
+                    answerlist = answer.split(separator: ",").map(String.init)
+                    if receiptItems.count == answerlist.count {
+                        for (index, ans) in answerlist.enumerated() {
+                            receiptItems[index].category = ans
+                            print(receiptItems[index].category)
+                        }
+                    } else {
+                        print("The count of new values does not match the count of objects.")
+                    }
+
+                    } else {
+                        print("There was an error or no answer available.")
+                    }
+            }
+
+    //        if receiptItems.count == answerlist.count {
+    //            for (index, ans) in answerlist.enumerated() {
+    //                receiptItems[index].category = ans
+    //                print(receiptItems[index].category)
+    //            }
+    //        } else {
+    //            print("The count of new values does not match the count of objects.")
+    //        }
+    //
+    //        ForEach($receiptItems, id: \.id) { $item in
+    //
+    //        }
+        }
     
     
     
