@@ -1,0 +1,42 @@
+{
+  "" : {
+    "dependencies" : "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Index.noindex/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/PocketLedger-master.d",
+    "diagnostics" : "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Index.noindex/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/PocketLedger-master.dia",
+    "emit-module-dependencies" : "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Index.noindex/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/PocketLedger-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Index.noindex/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/PocketLedger-master-emit-module.dia",
+    "swift-dependencies" : "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Index.noindex/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/PocketLedger-master.swiftdeps"
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Index.noindex/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/Categorization/CategorizationView.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/Configuration.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ContentView.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/gptAnalysis/AnalysisView.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ImagePicker.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/MainView.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/PocketLedgerApp.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ScanView.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ScanViewModel.swift" : {
+
+  },
+  "/Users/carolmyr/pocketLe/PocketLedger/UIImage+Extension.swift" : {
+
+  }
+}

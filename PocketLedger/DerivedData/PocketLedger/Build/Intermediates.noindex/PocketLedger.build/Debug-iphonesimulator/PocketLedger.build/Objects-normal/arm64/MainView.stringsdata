@@ -1,0 +1,16 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/MainView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "PocketLedger"
+      },
+      {
+        "comment": "",
+        "key": "Scan"
+      }
+    ]
+  },
+  "version": 1
+}

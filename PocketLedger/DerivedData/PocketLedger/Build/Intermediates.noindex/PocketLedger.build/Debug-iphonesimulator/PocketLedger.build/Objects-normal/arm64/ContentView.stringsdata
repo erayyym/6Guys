@@ -1,0 +1,16 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "No image selected"
+      },
+      {
+        "comment": "",
+        "key": "Scan"
+      }
+    ]
+  },
+  "version": 1
+}

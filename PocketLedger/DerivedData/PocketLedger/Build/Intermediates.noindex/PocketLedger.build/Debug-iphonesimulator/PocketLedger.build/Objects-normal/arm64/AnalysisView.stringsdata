@@ -1,0 +1,24 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/gptAnalysis/AnalysisView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Select Date"
+      },
+      {
+        "comment": "",
+        "key": "Selected date: %@"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Monthly Report"
+      }
+    ]
+  },
+  "version": 1
+}

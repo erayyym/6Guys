@@ -1,0 +1,20 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/CategorizationView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Summary"
+      },
+      {
+        "comment": "",
+        "key": "$%lf"
+      },
+      {
+        "comment": "",
+        "key": "Confirm"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -108,6 +108,7 @@ struct ScanView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Save") {
                     showingSubmitView = true
+                    //这里加上生成cate的function，更新cate gptpart
                 }
             }
         }
@@ -118,6 +119,13 @@ struct ScanView: View {
                         recognizeTextIfNeeded()
                     }
             }
+        }
+        .sheet(isPresented: $showingSubmitView){
+//            NavigationView{ //这里要说写了 navigationview会出现两次 然后那个summary 和confirm会出现两次
+            //being wrapped in another NavigationView when it's being used.
+                SummaryView(recepit: $recepit, receiptItems: $receiptItems)
+//            }
+            
         }
         
     }

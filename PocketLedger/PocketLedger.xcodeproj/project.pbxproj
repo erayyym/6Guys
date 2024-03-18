@@ -77,6 +77,7 @@
 				16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */,
 				16B355112BA3FAC40014F307 /* ContentView.swift */,
 				CC0EBD232BA7CE2A00B40430 /* MainView.swift */,
+				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 				CC0EBD252BA7CE7000B40430 /* ScanView.swift */,
 				CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */,
 				CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */,
@@ -106,7 +107,6 @@
 		16B3551E2BA3FADD0014F307 /* Categorization */ = {
 			isa = PBXGroup;
 			children = (
-				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 			);
 			path = Categorization;
 			sourceTree = "<group>";
