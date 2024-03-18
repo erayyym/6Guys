@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  PocketLedger
 //
-//  Created by Chen Yang on 3/17/24.
+//  Created by Chen Yang,Yang Gao on 3/17/24.
 //
 
 import SwiftUI
@@ -22,7 +22,7 @@ struct ContentView: View {
                     .frame(height: 250)
             } else {
                 Text("No image selected")
-                    .padding() // Optional, for some spacing around the text if needed.
+                    .padding() 
             }
 
             
