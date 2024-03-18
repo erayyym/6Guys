@@ -8,7 +8,8 @@
 import Foundation
 
 //store
-struct Recepit {
+
+struct Recepit: Identifiable {
     var id = UUID()
     var recepitId: String = ""
     var date: Date = Date()
@@ -16,7 +17,13 @@ struct Recepit {
     var recepitImage: Data? = nil
 
 }
-
+extension Recepit {
+    var formattedDate: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd" // Format date as needed
+        return dateFormatter.string(from: self.date)
+    }
+}
 struct RecepitItem {
     var id = UUID()
     var category: String = ""
