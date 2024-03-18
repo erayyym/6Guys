@@ -11,6 +11,16 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
+                HStack {
+                    NavigationLink(destination: MonthlyReportView()) {
+                        Text("Month Report")
+                            .foregroundColor(.blue)
+                            .padding(.horizontal, 12)
+                            .frame(maxWidth: .infinity,maxHeight: 80 ,alignment: .center)
+                            
+                    }
+                    Spacer()
+                }
                 NavigationLink(destination: ScanView()) {
                     Text("Scan")
                         .foregroundColor(.blue)
