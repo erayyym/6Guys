@@ -45,6 +45,7 @@
 		CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CC3574E22BA91FFA00B967E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 				CC0EBD232BA7CE2A00B40430 /* MainView.swift */,
 				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 				CC0EBD252BA7CE7000B40430 /* ScanView.swift */,
+				CC3574E22BA91FFA00B967E9 /* Info.plist */,
 				CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */,
 				CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */,
 				16B355132BA3FAC50014F307 /* Assets.xcassets */,
@@ -359,6 +361,10 @@
 				DEVELOPMENT_TEAM = NWXU4P3V7Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = abababab;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "access to cameraa";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "access to camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -389,6 +395,10 @@
 				DEVELOPMENT_TEAM = NWXU4P3V7Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = abababab;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "access to cameraa";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "access to camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
