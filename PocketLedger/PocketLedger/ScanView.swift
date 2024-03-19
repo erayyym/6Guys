@@ -260,8 +260,8 @@ struct ScanView: View {
             let name = receiptItems.map{$0.name}
             let namestr = name.joined(separator: ",")
             print(namestr)
-            let questionstr = "Here are a list of object name (\(namestr)), please based on (\(categories.joined(separator: ","))) to categories those object.(different name are seprate by , ) please return me just the answer of the categories of those object and seprate them using , just like how I give those objectname and categoriest to you. finally only give me the list of cotegories in this form:Drink,Drink,Electronics"
-            
+            let questionstr = "Please categorize the following items separated by commas: \(namestr), according to following categories: \(categories.joined(separator: ", ")), just output the types in order separated by comma, without outputting any other information."
+        
             print(questionstr)
             let gGe = OpenAI()
             gGe.ask(question: questionstr){ answer in
@@ -273,32 +273,23 @@ struct ScanView: View {
                             receiptItems[index].category = ans
                             print(receiptItems[index].category)
                         }
-                    } else {
+                    }
+                    else {
                         print("The count of new values does not match the count of objects.")
                     }
 
                     } else {
                         print("There was an error or no answer available.")
                     }
+
+                }
             }
 
-    //        if receiptItems.count == answerlist.count {
-    //            for (index, ans) in answerlist.enumerated() {
-    //                receiptItems[index].category = ans
-    //                print(receiptItems[index].category)
-    //            }
-    //        } else {
-    //            print("The count of new values does not match the count of objects.")
-    //        }
-    //
-    //        ForEach($receiptItems, id: \.id) { $item in
-    //
-    //        }
         }
     
     
     
-}
+
 
 
 

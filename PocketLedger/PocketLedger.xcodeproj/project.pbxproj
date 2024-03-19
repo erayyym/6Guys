@@ -62,7 +62,6 @@
 		16B355032BA3FAC40014F307 = {
 			isa = PBXGroup;
 			children = (
-				CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */,
 				16B3550E2BA3FAC40014F307 /* PocketLedger */,
 				16B3550D2BA3FAC40014F307 /* Products */,
 				CC0EBD2A2BA7D08F00B40430 /* Frameworks */,
@@ -84,6 +83,7 @@
 				16B3551D2BA3FACE0014F307 /* gptAnalysis */,
 				16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */,
 				16B355112BA3FAC40014F307 /* ContentView.swift */,
+				CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */,
 				CC0EBD232BA7CE2A00B40430 /* MainView.swift */,
 				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 				CC0EBD252BA7CE7000B40430 /* ScanView.swift */,
@@ -356,7 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = YBH373JJDN;
+				DEVELOPMENT_TEAM = NWXU4P3V7Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -370,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.owenkani;
+				PRODUCT_BUNDLE_IDENTIFIER = com.outlook.chenyang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -386,7 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = YBH373JJDN;
+				DEVELOPMENT_TEAM = NWXU4P3V7Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -400,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.owenkani;
+				PRODUCT_BUNDLE_IDENTIFIER = com.outlook.chenyang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
