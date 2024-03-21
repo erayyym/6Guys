@@ -27,7 +27,6 @@
 		CC4FB8B22BACCCE300FBCD9C /* FinancialGoalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B12BACCCE300FBCD9C /* FinancialGoalRowView.swift */; };
 		CC4FB8B42BACCD2600FBCD9C /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B32BACCD2600FBCD9C /* AnnotationView.swift */; };
 		CC4FB8B62BACD18E00FBCD9C /* FinancialGoal in Resources */ = {isa = PBXBuildFile; fileRef = CC4FB8B52BACD18E00FBCD9C /* FinancialGoal */; };
-		CC4FB8B82BACE05700FBCD9C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B72BACE05700FBCD9C /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +52,6 @@
 		CC4FB8B12BACCCE300FBCD9C /* FinancialGoalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialGoalRowView.swift; sourceTree = "<group>"; };
 		CC4FB8B32BACCD2600FBCD9C /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		CC4FB8B52BACD18E00FBCD9C /* FinancialGoal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FinancialGoal; sourceTree = "<group>"; };
-		CC4FB8B72BACE05700FBCD9C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 				16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */,
 				CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */,
 				CC0EBD232BA7CE2A00B40430 /* MainView.swift */,
-				CC4FB8B72BACE05700FBCD9C /* Extension.swift */,
 				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 				470285462BACE58500EE5814 /* BarChart.swift */,
 				CC0EBD252BA7CE7000B40430 /* ScanView.swift */,
@@ -232,7 +229,6 @@
 				470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */,
 				CC0EBD242BA7CE2A00B40430 /* MainView.swift in Sources */,
 				CC0EBD2E2BA7D23500B40430 /* UIImage+Extension.swift in Sources */,
-				CC4FB8B82BACE05700FBCD9C /* Extension.swift in Sources */,
 				CC4FB8B42BACCD2600FBCD9C /* AnnotationView.swift in Sources */,
 				16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */,
 				CC1C58B62BA7C3FA000E1518 /* ImagePicker.swift in Sources */,
