@@ -12,6 +12,7 @@ import Combine
 
 struct ScanView: View {
     @Environment(\.presentationMode) var presentationMode
+
     
     @State private var recepit: Recepit = Recepit()
     @State private var receiptItems: [RecepitItem] = []
@@ -352,10 +353,14 @@ struct ScanView: View {
                 if let answer = answer {
                     print("The answer is: \(answer)")
                     answerlist = answer.split(separator: ",").map(String.init)
-                    
-                    for (index, ans) in answerlist.enumerated() {
+                    if answerlist.count <= receiptItems.count  {
+                        for (index, ans) in answerlist.enumerated() {
                         receiptItems[index].category = ans
                         print(receiptItems[index].category)
+                        }
+                    }
+                    else {
+                        print("gpt return too many answers")
                     }
                 }
 
