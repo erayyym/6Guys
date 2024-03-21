@@ -9,6 +9,12 @@ import SwiftUI
 
 @main
 struct PocketLedgerApp: App {
+    let persistenceController = PersistenceController.shared
+
+    init() {
+        persistenceController.createTables()
+    }
+    
     var body: some Scene {
         WindowGroup {
             MainView()
