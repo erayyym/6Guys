@@ -1,10 +1,3 @@
-//
-//  MainView.swift
-//  PocketLedger
-//
-//  Created by Yang Gao on 2024/3/17.
-//
-
 import SwiftUI
 
 struct MainView: View {
@@ -19,28 +12,32 @@ struct MainView: View {
                             .foregroundColor(.blue)
                             .padding(.horizontal, 12)
                             .frame(maxWidth: .infinity,maxHeight: 80 ,alignment: .center)
-                            
                     }
                     Spacer()
                 }
                 
-//                set financial goal
+                // Set financial goal with a clickable button
                 Section(header:
-//                    HStack {
-//                        NavigationLink(destination: FinancialGoalView()){
-                            Text("Set Financial Goals:")
-//                                .font(.headline)
-//                        }
-//                    }
-//                    .padding(.horizontal)
-//                    .frame(maxWidth: .infinity, alignment: .leading)
+                    HStack {
+                        Text("Set Financial Goals:")
+                            .font(.headline)
+                        Spacer()
+                        Button(action: {
+                            // Action for your button
+                            // e.g., navigate to a new view or present a modal
+                        }) {
+                            Image(systemName: "plus.circle.fill") // Using SF Symbols for the button icon
+                                .foregroundColor(.blue)
+                        }
+                    }
+                    .padding(.horizontal)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 ) {
-                    ForEach(recentGoals, id: \.id){goalModel in
+                    ForEach(recentGoals, id: \.id) { goalModel in
                         FinancialGoalRowView(goalModel: goalModel)
                     }
                 }
                 
-                        
                 NavigationLink(destination: ScanView()) {
                     Text("Scan")
                         .foregroundColor(.blue)
