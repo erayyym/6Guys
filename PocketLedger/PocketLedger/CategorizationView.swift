@@ -8,12 +8,44 @@ struct SummaryItem: Identifiable {
 }
 
 struct SummaryView: View {
+    @Environment(\.dismiss) private var dismiss
+    var onSubmit: (() -> Void)?
     @Binding private var recepit: Recepit
     @Binding private var receiptItems: [RecepitItem]
     
-    init(recepit: Binding<Recepit>, receiptItems:Binding< [RecepitItem]>) {
+    init(recepit: Binding<Recepit>, receiptItems:Binding< [RecepitItem]>, onSubmit: (() -> Void)?) {
         self._recepit = recepit
         self._receiptItems = receiptItems
+        self.onSubmit = onSubmit
+    }
+    
+    func submitToDB() {
+        PersistenceController.shared.insertReceipt(receipt: recepit){ success in
+            if success {
+                // sucess
+                print("recepit save sucess")
+                PersistenceController.shared.insertReceiptItems(items: receiptItems) { success in
+                    if success {
+                       // sucess
+                        print("receiptItems save sucess")
+                        dismiss()
+                        onSubmit?()
+
+                    } else {
+                        // failure
+                        print("receiptItems save failure")
+                    }
+                }
+                
+                
+            } else {
+               // failure
+                print("recepit save failure")
+
+            }
+        }
+
+        
     }
     
     
@@ -26,7 +58,7 @@ struct SummaryView: View {
 
     // Add more categories as needed
     let categories = [
-        "Food", "Drink", "Pet Supplies", "utilities", "Tuition"
+        "Food", "Drink", "utilities", "Tuition"
     ]
 
     
@@ -46,8 +78,10 @@ struct SummaryView: View {
             }
             .navigationTitle("Summary")
             .toolbar {
-                Button("Confirm") {
-                    // Handle the confirm action here
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("submit") {
+                        submitToDB()
+                    }
                 }
             }
         }

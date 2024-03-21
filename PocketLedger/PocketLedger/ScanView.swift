@@ -12,7 +12,6 @@ import Combine
 
 struct ScanView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var keyboardHeight: CGFloat = 0
     
     @State private var recepit: Recepit = Recepit()
     @State private var receiptItems: [RecepitItem] = []
@@ -191,6 +190,7 @@ struct ScanView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Save") {
                     showingSubmitView = true
+                    gptCate()
                 }
             }
         }
@@ -201,6 +201,14 @@ struct ScanView: View {
                         recognizeTextIfNeeded()
                     }
             }
+        }
+        .sheet(isPresented: $showingSubmitView){
+//            NavigationView{ //这里要说写了 navigationview会出现两次 然后那个summary 和confirm会出现两次
+            //being wrapped in another NavigationView when it's being used.
+                SummaryView(recepit: $recepit, receiptItems: $receiptItems, onSubmit: {
+                    presentationMode.wrappedValue.dismiss()
+            })
+
         }
         
     }
@@ -344,19 +352,12 @@ struct ScanView: View {
                 if let answer = answer {
                     print("The answer is: \(answer)")
                     answerlist = answer.split(separator: ",").map(String.init)
-                    if receiptItems.count == answerlist.count {
-                        for (index, ans) in answerlist.enumerated() {
-                            receiptItems[index].category = ans
-                            print(receiptItems[index].category)
-                        }
+                    
+                    for (index, ans) in answerlist.enumerated() {
+                        receiptItems[index].category = ans
+                        print(receiptItems[index].category)
                     }
-                    else {
-                        print("The count of new values does not match the count of objects.")
-                    }
-
-                    } else {
-                        print("There was an error or no answer available.")
-                    }
+                }
 
                 }
             }
