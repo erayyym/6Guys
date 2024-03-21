@@ -33,3 +33,13 @@ struct RecepitItem {
     var recepitId: String = ""
 
 }
+struct GoalModel {
+    var id = UUID()
+    var goal: String = ""
+    var amount: Double = 0.0
+    var date:Date = Date()
+    var createDate:Date = Date()
+    var achieved: Bool = false
+
+}
+

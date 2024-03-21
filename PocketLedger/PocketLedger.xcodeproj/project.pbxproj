@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		16B355102BA3FAC40014F307 /* PocketLedgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */; };
-		16B355122BA3FAC40014F307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B355112BA3FAC40014F307 /* ContentView.swift */; };
 		16B355142BA3FAC50014F307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B355132BA3FAC50014F307 /* Assets.xcassets */; };
 		16B355172BA3FAC50014F307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B355162BA3FAC50014F307 /* Preview Assets.xcassets */; };
 		16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3551F2BA3FAF90014F307 /* CategorizationView.swift */; };
@@ -24,12 +23,15 @@
 		CC0EBD2E2BA7D23500B40430 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */; };
 		CC0EBD302BA7D2A200B40430 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */; };
 		CC1C58B62BA7C3FA000E1518 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */; };
+		CC4FB8B22BACCCE300FBCD9C /* FinancialGoalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B12BACCCE300FBCD9C /* FinancialGoalRowView.swift */; };
+		CC4FB8B42BACCD2600FBCD9C /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B32BACCD2600FBCD9C /* AnnotationView.swift */; };
+		CC4FB8B62BACD18E00FBCD9C /* FinancialGoal in Resources */ = {isa = PBXBuildFile; fileRef = CC4FB8B52BACD18E00FBCD9C /* FinancialGoal */; };
+		CC4FB8B82BACE05700FBCD9C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B72BACE05700FBCD9C /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16B3550C2BA3FAC40014F307 /* PocketLedger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketLedger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketLedgerApp.swift; sourceTree = "<group>"; };
-		16B355112BA3FAC40014F307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16B355132BA3FAC50014F307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16B355162BA3FAC50014F307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16B3551F2BA3FAF90014F307 /* CategorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizationView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,10 @@
 		CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CC3574E22BA91FFA00B967E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4FB8B12BACCCE300FBCD9C /* FinancialGoalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialGoalRowView.swift; sourceTree = "<group>"; };
+		CC4FB8B32BACCD2600FBCD9C /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		CC4FB8B52BACD18E00FBCD9C /* FinancialGoal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FinancialGoal; sourceTree = "<group>"; };
+		CC4FB8B72BACE05700FBCD9C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,19 +89,22 @@
 				16B3551E2BA3FADD0014F307 /* Categorization */,
 				16B3551D2BA3FACE0014F307 /* gptAnalysis */,
 				16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */,
-				16B355112BA3FAC40014F307 /* ContentView.swift */,
 				CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */,
 				CC0EBD232BA7CE2A00B40430 /* MainView.swift */,
+				CC4FB8B72BACE05700FBCD9C /* Extension.swift */,
 				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 				CC0EBD252BA7CE7000B40430 /* ScanView.swift */,
 				CC3574E22BA91FFA00B967E9 /* Info.plist */,
 				CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */,
+				CC4FB8B52BACD18E00FBCD9C /* FinancialGoal */,
 				CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */,
 				16B355132BA3FAC50014F307 /* Assets.xcassets */,
 				470285302BA8C90500EE5814 /* model */,
 				16B355152BA3FAC50014F307 /* Preview Content */,
 				CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */,
 				4702852E2BA8C09B00EE5814 /* MonthlyReportView.swift */,
+				CC4FB8B12BACCCE300FBCD9C /* FinancialGoalRowView.swift */,
+				CC4FB8B32BACCD2600FBCD9C /* AnnotationView.swift */,
 			);
 			path = PocketLedger;
 			sourceTree = "<group>";
@@ -200,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B355172BA3FAC50014F307 /* Preview Assets.xcassets in Resources */,
+				CC4FB8B62BACD18E00FBCD9C /* FinancialGoal in Resources */,
 				16B355142BA3FAC50014F307 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,16 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4FB8B22BACCCE300FBCD9C /* FinancialGoalRowView.swift in Sources */,
 				6765990C2BA8FF670044F983 /* gptapi.swift in Sources */,
 				CC0EBD262BA7CE7000B40430 /* ScanView.swift in Sources */,
 				16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */,
 				470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */,
 				CC0EBD242BA7CE2A00B40430 /* MainView.swift in Sources */,
 				CC0EBD2E2BA7D23500B40430 /* UIImage+Extension.swift in Sources */,
+				CC4FB8B82BACE05700FBCD9C /* Extension.swift in Sources */,
+				CC4FB8B42BACCD2600FBCD9C /* AnnotationView.swift in Sources */,
 				16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */,
 				CC1C58B62BA7C3FA000E1518 /* ImagePicker.swift in Sources */,
 				CC0EBD302BA7D2A200B40430 /* Configuration.swift in Sources */,
-				16B355122BA3FAC40014F307 /* ContentView.swift in Sources */,
 				470285342BA8C9EF00EE5814 /* ReceiptModels.swift in Sources */,
 				4702852F2BA8C09B00EE5814 /* MonthlyReportView.swift in Sources */,
 				16B355102BA3FAC40014F307 /* PocketLedgerApp.swift in Sources */,
