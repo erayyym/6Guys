@@ -329,5 +329,8 @@ class PersistenceController {
         return monthlyReports
     }
 
+    func dueDateText(from date: Date) -> String {
+        return DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none)
+    }
 
 }

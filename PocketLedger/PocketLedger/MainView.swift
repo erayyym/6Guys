@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var recentGoals: [GoalModel] = []
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -21,6 +23,24 @@ struct MainView: View {
                     }
                     Spacer()
                 }
+                
+//                set financial goal
+                Section(header:
+//                    HStack {
+//                        NavigationLink(destination: FinancialGoalView()){
+                            Text("Set Financial Goals:")
+//                                .font(.headline)
+//                        }
+//                    }
+//                    .padding(.horizontal)
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+                ) {
+                    ForEach(recentGoals, id: \.id){goalModel in
+                        FinancialGoalRowView(goalModel: goalModel)
+                    }
+                }
+                
+                        
                 NavigationLink(destination: ScanView()) {
                     Text("Scan")
                         .foregroundColor(.blue)

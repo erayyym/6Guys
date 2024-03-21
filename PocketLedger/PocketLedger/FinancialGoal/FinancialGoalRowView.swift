@@ -6,19 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct FinancialGoalRowView:View{
+struct FinancialGoalRowView: View {
     var goalModel: GoalModel
     
-    var body: some View(){
+    var body: some View {
         HStack(){
             Image(systemName: "circle")
                 .resizable()
                 .frame(width: 10, height: 10)
                 .padding(.horizontal,12)
             VStack(){
-                Text(string(format: "save $%.2f for \(goalModel.goal)", goalModel.amount))
-                Text("Due: \(dueDatetext)")
+                Text(String(format: "save $%.2f for \(goalModel.goal)", goalModel.amount))
+                Text("Due: \(dueDateText)")
                     .font(.subheadline)
             }
             Spacer()
@@ -31,4 +32,14 @@ struct FinancialGoalRowView:View{
     var dueDateText: String {
         return PersistenceController.shared.dueDateText(from: goalModel.createDate)
     }
+}
+
+struct GoalModel {
+    var id = UUID()
+    var goal: String = ""
+    var amount: Double = 0.0
+    var date:Date = Date()
+    var createDate:Date = Date()
+    var achieved: Bool = false
+
 }
