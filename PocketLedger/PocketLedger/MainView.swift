@@ -2,7 +2,8 @@ import SwiftUI
 
 struct MainView: View {
     @State private var recentGoals: [GoalModel] = []
-    
+    @State private var recentReceipts: [Recepit] = []
+
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -23,11 +24,10 @@ struct MainView: View {
                             .font(.headline)
                         Spacer()
                         Button(action: {
-                            // Action for your button
-                            // e.g., navigate to a new view or present a modal
+                            
                         }) {
                             Image(systemName: "plus.circle.fill") // Using SF Symbols for the button icon
-                                .foregroundColor(.blue)
+                                .foregroundColor(.black)
                         }
                     }
                     .padding(.horizontal)
@@ -47,6 +47,31 @@ struct MainView: View {
                 .padding()
                 
                 Spacer()
+                
+                Section(header:
+                    HStack {
+                        NavigationLink(destination: HistoryView()) {
+                            Text("Receipts")
+                                .font(.headline)
+                        }
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .listRowInsets(EdgeInsets())
+                ) {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 20) {
+                            ForEach(recentReceipts, id: \.id) { receipt in
+                                NavigationLink(destination: ReceiptView(receipt: receipt)) {
+                                    ReceiptItemView(receipt: receipt)
+                                }
+                                .buttonStyle(PlainButtonStyle())
+                            }
+                        }
+                        .padding()
+                    }
+                }
             }
             .navigationBarTitle("PocketLedger", displayMode: .inline)
         }

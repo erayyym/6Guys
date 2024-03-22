@@ -23,6 +23,9 @@
 		CC0EBD2C2BA7D08F00B40430 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0EBD2B2BA7D08F00B40430 /* Vision.framework */; };
 		CC0EBD2E2BA7D23500B40430 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */; };
 		CC0EBD302BA7D2A200B40430 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */; };
+		CC0EBD542BACEE8700B40430 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD532BACEE8700B40430 /* HistoryView.swift */; };
+		CC0EBD562BACF09600B40430 /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD552BACF09600B40430 /* ReceiptView.swift */; };
+		CC0EBD582BACF24000B40430 /* ReceiptItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD572BACF24000B40430 /* ReceiptItemView.swift */; };
 		CC1C58B62BA7C3FA000E1518 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */; };
 		CC4FB8B22BACCCE300FBCD9C /* FinancialGoalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B12BACCCE300FBCD9C /* FinancialGoalRowView.swift */; };
 		CC4FB8B42BACCD2600FBCD9C /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B32BACCD2600FBCD9C /* AnnotationView.swift */; };
@@ -47,6 +50,9 @@
 		CC0EBD2B2BA7D08F00B40430 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
 		CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CC0EBD532BACEE8700B40430 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		CC0EBD552BACF09600B40430 /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
+		CC0EBD572BACF24000B40430 /* ReceiptItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItemView.swift; sourceTree = "<group>"; };
 		CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CC3574E22BA91FFA00B967E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4FB8B12BACCCE300FBCD9C /* FinancialGoalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialGoalRowView.swift; sourceTree = "<group>"; };
@@ -91,6 +97,9 @@
 				16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */,
 				CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */,
 				CC0EBD232BA7CE2A00B40430 /* MainView.swift */,
+				CC0EBD532BACEE8700B40430 /* HistoryView.swift */,
+				CC0EBD552BACF09600B40430 /* ReceiptView.swift */,
+				CC0EBD572BACF24000B40430 /* ReceiptItemView.swift */,
 				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 				470285462BACE58500EE5814 /* BarChart.swift */,
 				CC0EBD252BA7CE7000B40430 /* ScanView.swift */,
@@ -228,14 +237,17 @@
 				16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */,
 				470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */,
 				CC0EBD242BA7CE2A00B40430 /* MainView.swift in Sources */,
+				CC0EBD582BACF24000B40430 /* ReceiptItemView.swift in Sources */,
 				CC0EBD2E2BA7D23500B40430 /* UIImage+Extension.swift in Sources */,
 				CC4FB8B42BACCD2600FBCD9C /* AnnotationView.swift in Sources */,
+				CC0EBD562BACF09600B40430 /* ReceiptView.swift in Sources */,
 				16B355202BA3FAF90014F307 /* CategorizationView.swift in Sources */,
 				CC1C58B62BA7C3FA000E1518 /* ImagePicker.swift in Sources */,
 				CC0EBD302BA7D2A200B40430 /* Configuration.swift in Sources */,
 				470285342BA8C9EF00EE5814 /* ReceiptModels.swift in Sources */,
 				4702852F2BA8C09B00EE5814 /* MonthlyReportView.swift in Sources */,
 				16B355102BA3FAC40014F307 /* PocketLedgerApp.swift in Sources */,
+				CC0EBD542BACEE8700B40430 /* HistoryView.swift in Sources */,
 				CC0EBD282BA7CF2F00B40430 /* ScanViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = YBH373JJDN;
+				DEVELOPMENT_TEAM = TL3TF782MY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -388,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.owenkani;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.andrewyg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -404,7 +416,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = YBH373JJDN;
+				DEVELOPMENT_TEAM = TL3TF782MY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -422,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.owenkani;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.andrewyg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
