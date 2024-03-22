@@ -35,6 +35,17 @@ class PersistenceController {
           );
       """
     
+    private let createFinancialTableQuery = """
+        CREATE TABLE IF NOT EXISTS Goals (
+            id TEXT PRIMARY KEY,
+            goal TEXT,
+            amount REAL,
+            date TEXT,
+            createDate TEXT,
+            achieved INTEGER
+        );
+    """
+    
     private lazy var dateFormatter: DateFormatter = {
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -52,6 +63,12 @@ class PersistenceController {
             print("ReceiptItems table created successfully")
         } else {
             print("Error creating ReceiptItems table")
+        }
+        
+        if executeQuery(query: createFinancialTableQuery) {
+            print("Financial table created successfully")
+        } else {
+            print("Error creating Financial table")
         }
     }
     
@@ -96,13 +113,21 @@ class PersistenceController {
                 var row = [String: String]()
                 for i in 0..<sqlite3_column_count(statement) {
                     let columnName = String(cString: sqlite3_column_name(statement, i))
-                    if let columnText = sqlite3_column_text(statement, i){
-                        let Text = String(cString: columnText)
-                        row[columnName] = Text
+//                    let columnText = String(cString: sqlite3_column_text(statement, i))
+                    var columnText = " "
+                    if i==5 {
+                        if let cString = sqlite3_column_text(statement, i) {
+                            columnText = String(cString: cString)
+                        } else {
+                            columnText = "0" // Assign a default value or handle this case as needed
+                        }
                     } else {
-                        row[columnName] = ""
+                        columnText = String(cString: sqlite3_column_text(statement, i))
                     }
                     
+
+
+                    row[columnName] = columnText
                 }
                 result.append(row)
             }
@@ -338,4 +363,69 @@ class PersistenceController {
         return DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .none)
     }
 
+//    Goals
+    func insertGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
+            let query = """
+                INSERT INTO Goals (id, goal, amount, date, createDate, achieved)
+                VALUES (?, ?, ?, ?, ?, ?);
+            """
+            
+            let dateString = dateFormatter.string(from: goal.date)
+            let createDateStrig = dateFormatter.string(from: goal.createDate)
+            let achieved = goal.achieved ? 1:0
+            completion(executeQueryWithParams(query: query, params: [goal.id.uuidString, goal.goal, goal.amount, dateString, createDateStrig, achieved]))
+        }
+
+        
+        func deleteGoal(goalId: String, completion: @escaping (Bool) -> Void) {
+            let query = "DELETE FROM Goals WHERE id = ?;"
+            
+            completion(executeQueryWithParams(query: query, params: [goalId]))
+        }
+        
+        
+
+        func fetchGoals(completion: @escaping ([GoalModel]) -> Void) {
+            let query = "SELECT * FROM Goals ORDER BY createDate DESC;"
+            let rows = fetchQuery(query: query)
+            var goals = [GoalModel]()
+            
+            for row in rows {
+                if let idString = row["id"],
+                   let goal = row["goal"],
+                   let amountString = row["amount"],
+                   let amount = Double(amountString),
+                   let achievedString = row["achieved"],
+                   let achieved = Int(achievedString),
+
+                   let dateString = row["date"],
+                   let createDateStr = row["createDate"],
+                   let id = UUID(uuidString: idString),
+                   let date = dateFormatter.date(from: dateString),
+                   let createDate = dateFormatter.date(from: createDateStr) {
+                    
+                    let goalModel = GoalModel(id: id, goal: goal, amount: amount, date: date, createDate: createDate, achieved: achieved == 0 ? true : false)
+                    goals.append(goalModel)
+                }
+            }
+            
+            completion(goals)
+        }
+    
+    func updateGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
+        let query = """
+                    UPDATE Goals
+                    SET goal = ?,
+                        amount = ?,
+                        date = ?,
+                        achieved = ?
+                    WHERE id = ?;
+                """
+        
+        let dateString = dateFormatter.string(from: goal.date)
+        let achievedValue = goal.achieved ? 1 : 0
+        
+        completion(executeQueryWithParams(query: query, params: [goal.goal, goal.amount, dateString, achievedValue, goal.id.uuidString]))
+    }
 }
+

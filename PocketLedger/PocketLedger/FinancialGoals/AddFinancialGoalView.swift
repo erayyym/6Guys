@@ -12,8 +12,8 @@ struct AddFinancialGoalView: View {
     @State private var amount = ""
     @State private var selectedDate = Date()
     @Environment(\.presentationMode) var presentationMode
-    var onGoalAdded: (() -> Void)?
-    
+    var onGoalAdded: (() -> Void)? 
+
     var body: some View {
         Form {
             Section(header: Text("Set Goal")) {

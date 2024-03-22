@@ -50,9 +50,3 @@ struct FinancialGoalView: View {
     }
 
 }
-
-//struct FinancialGoalView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FinancialGoalView()
-//    }
-//}

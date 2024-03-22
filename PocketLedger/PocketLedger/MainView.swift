@@ -17,26 +17,43 @@ struct MainView: View {
                     Spacer()
                 }
                 
-                // Set financial goal with a clickable button
+                
+                // financial goals
                 Section(header:
                     HStack {
-                        Text("Set Financial Goals:")
-                            .font(.headline)
-                        Spacer()
-                        Button(action: {
-                            
-                        }) {
-                            Image(systemName: "plus.circle.fill") // Using SF Symbols for the button icon
-                                .foregroundColor(.black)
+                        NavigationLink(destination: FinancialGoalView()) {
+                            Text("Financial goals")
+                                .font(.headline)
                         }
                     }
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 ) {
-                    ForEach(recentGoals, id: \.id) { goalModel in
-                        FinancialGoalRowView(goalModel: goalModel)
-                    }
+//                    ForEach(recentGoals, id: \.id) { goalModel in
+//                        FinancialGoalRowView(goalModel: goalModel)
+//                       }
                 }
+                
+//                // Set financial goal with a clickable button
+//                Section(header:
+//                    HStack {
+//                        Text("Set Financial Goals:")
+//                            .font(.headline)
+//                        Spacer()
+//                        Button(action: {
+//                            
+//                        }) {
+//                            Image(systemName: "plus.circle.fill") // Using SF Symbols for the button icon
+//                                .foregroundColor(.black)
+//                        }
+//                    }
+//                    .padding(.horizontal)
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+//                ) {
+//                    ForEach(recentGoals, id: \.id) { goalModel in
+//                        FinancialGoalRowView(goalModel: goalModel)
+//                    }
+//                }
                 
                 NavigationLink(destination: ScanView()) {
                     Text("Scan")
