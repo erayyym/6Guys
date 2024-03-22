@@ -96,8 +96,13 @@ class PersistenceController {
                 var row = [String: String]()
                 for i in 0..<sqlite3_column_count(statement) {
                     let columnName = String(cString: sqlite3_column_name(statement, i))
-                    let columnText = String(cString: sqlite3_column_text(statement, i))
-                    row[columnName] = columnText
+                    if let columnText = sqlite3_column_text(statement, i){
+                        let Text = String(cString: columnText)
+                        row[columnName] = Text
+                    } else {
+                        row[columnName] = ""
+                    }
+                    
                 }
                 result.append(row)
             }
