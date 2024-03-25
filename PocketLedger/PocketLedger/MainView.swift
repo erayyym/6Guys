@@ -24,36 +24,16 @@ struct MainView: View {
                         NavigationLink(destination: FinancialGoalView()) {
                             Text("Financial goals")
                                 .font(.headline)
+                            Image(systemName: "plus")
+                                            .foregroundColor(.blue) // Or your desired color
+                                            .padding()
                         }
                     }
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                ) {
-//                    ForEach(recentGoals, id: \.id) { goalModel in
-//                        FinancialGoalRowView(goalModel: goalModel)
-//                       }
+                )
+                {
                 }
-                
-//                // Set financial goal with a clickable button
-//                Section(header:
-//                    HStack {
-//                        Text("Set Financial Goals:")
-//                            .font(.headline)
-//                        Spacer()
-//                        Button(action: {
-//                            
-//                        }) {
-//                            Image(systemName: "plus.circle.fill") // Using SF Symbols for the button icon
-//                                .foregroundColor(.black)
-//                        }
-//                    }
-//                    .padding(.horizontal)
-//                    .frame(maxWidth: .infinity, alignment: .leading)
-//                ) {
-//                    ForEach(recentGoals, id: \.id) { goalModel in
-//                        FinancialGoalRowView(goalModel: goalModel)
-//                    }
-//                }
                 
                 NavigationLink(destination: ScanView()) {
                     Text("Scan")
