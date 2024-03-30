@@ -204,8 +204,6 @@ struct ScanView: View {
             }
         }
         .sheet(isPresented: $showingSubmitView){
-//            NavigationView{ //这里要说写了 navigationview会出现两次 然后那个summary 和confirm会出现两次
-            //being wrapped in another NavigationView when it's being used.
                 SummaryView(recepit: $recepit, receiptItems: $receiptItems, onSubmit: {
                     presentationMode.wrappedValue.dismiss()
             })
@@ -258,7 +256,6 @@ struct ScanView: View {
             self.recepit.date = Date()
             self.recepit.recepitImage = image.resetImgSize(maxSizeKB: 100)
             
-            receiptItems = parseItemsFromReceipt(recognizedText)
         }
         
         let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
@@ -269,78 +266,9 @@ struct ScanView: View {
         }
     }
     
-    func parseItemsFromReceipt(_ text: String) -> [RecepitItem] {
-        var items: [RecepitItem] = []
-        
-        var prices:[Double] = []
-        var nameStartIndex = 0
-        var nameEndIndex = 0
-        var priceStartIndex = 0
-        var totalPrice = 0.0
-        let lines = text.components(separatedBy: "\n")
-        for (index, line) in lines.enumerated() {
-            if index > 0 {
-                let lastLine = lines[index - 1]
-                if lastLine == "E" && line != "E" {
-                    nameStartIndex = index
-                }
-                
-                if line.hasSuffix("SUBTOTAL") {
-                    nameEndIndex = index
-                }
-                
-                if nameEndIndex > nameStartIndex && names.isEmpty {
-                    let subArray = lines[nameStartIndex..<nameEndIndex]
-                    for (_, nameStr) in subArray.enumerated() {
-                        var  arr = nameStr.components(separatedBy: " ")
-                        var result = ""
-                        if arr.count > 1 {
-                            arr.removeFirst()
-                            result = arr.joined(separator: " ")
-                            names.append(result)
-                        } else {
-                            result = arr[0]
-                            names.append(result)
-                        }
-                    }
-                }
-                
-                if line.hasSuffix(" E") && !lastLine.hasSuffix(" E") {
-                    priceStartIndex = index
-                    let subArray = lines[priceStartIndex..<priceStartIndex + (names.count)]
-                    for (_, priceStr) in subArray.enumerated() {
-                        if priceStr.hasSuffix(" E") {
-                            if let priceStr = priceStr.components(separatedBy: " ").first, let doubleValue = Double(priceStr) {
-                                prices.append(doubleValue)
-                            }
-                        } else {
-                            prices.append(Double(priceStr) ?? 0)
-                        }
-                    }
-                }
-            }
-        }
-        
-        for (index, price) in prices.enumerated() {
-            var item = RecepitItem()
-            item.date = recepit.date
-            item.recepitId = recepit.recepitId
-            item.name = names[index]
-            item.price = price
-            items.append(item)
-            totalPrice += price
-        }
-        self.recepit.totalPrice = totalPrice
-        
-        return items
-    }
+
 
     func gptCate(){
-            /*1. 所有name放出来
-             2. name 加上问题发给gpt
-             3. gpt的回答放到list里
-             4. gpt的回答更新stuct cate的value
-             */
 
             let name = receiptItems.map{$0.name}
             let namestr = name.joined(separator: ",")
