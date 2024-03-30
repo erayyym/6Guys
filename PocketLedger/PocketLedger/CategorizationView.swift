@@ -109,9 +109,9 @@ struct CategoryView: View {
                 .font(.system(size: 12))
             }
         }
-        .foregroundColor(.white)
+        .foregroundColor(.yellow)
         .padding(4)
-        .background(Color.green)
+        .background(Color.black)
         .cornerRadius(8)
     }
 }

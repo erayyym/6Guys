@@ -25,7 +25,7 @@ struct MainView: View {
                             Text("Financial goals")
                                 .font(.headline)
                             Image(systemName: "plus")
-                                            .foregroundColor(.blue) // Or your desired color
+                                            .foregroundColor(.blue)
                                             .padding()
                         }
                     }

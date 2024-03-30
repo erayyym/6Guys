@@ -41,7 +41,6 @@ struct BarView: View {
         }
     }
     
-    // Just to simulate a max total, you could adjust this to be the max of your data or some other logic
     func maxTotal() -> Double {
         return 100
     }
@@ -109,9 +108,7 @@ struct AnalysisView: View {
 
                 Divider()
 
-                CalendarView() // The custom calendar view
-
-                // Rest of your views...
+                CalendarView() 
             }
         }
         .padding()
