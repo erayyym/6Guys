@@ -95,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				80AF32D72BAD4523001A9C37 /* FinancialGoals */,
-				16B3551E2BA3FADD0014F307 /* Categorization */,
 				16B3551D2BA3FACE0014F307 /* gptAnalysis */,
 				16B3550F2BA3FAC40014F307 /* PocketLedgerApp.swift */,
 				CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */,
@@ -133,13 +132,6 @@
 				16B355212BA3FB080014F307 /* AnalysisView.swift */,
 			);
 			path = gptAnalysis;
-			sourceTree = "<group>";
-		};
-		16B3551E2BA3FADD0014F307 /* Categorization */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categorization;
 			sourceTree = "<group>";
 		};
 		470285302BA8C90500EE5814 /* model */ = {
@@ -394,13 +386,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = TL3TF782MY;
+				DEVELOPMENT_TEAM = FV9KGA2845;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = abababab;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "access to microphone";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "access to cameraa";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "access to camera";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "recognize speech";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,13 +422,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = TL3TF782MY;
+				DEVELOPMENT_TEAM = FV9KGA2845;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = abababab;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "access to microphone";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "access to cameraa";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "access to camera";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "recognize speech";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

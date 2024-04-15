@@ -9,6 +9,7 @@
 import SwiftUI
 import Vision
 import Combine
+import Speech
 
 struct ScanView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -32,6 +33,11 @@ struct ScanView: View {
     @State private var isEditingName: Bool = false
     @State private var isEditingPrice: Bool = false
     @State var answerlist: [String] = []
+    
+    @State private var isRecording: Bool = false
+    @State private var speechText: String = ""
+    let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
+    let audioEngine = AVAudioEngine()
     
     private var numberFormatter: NumberFormatter {
         let formatter = NumberFormatter()
@@ -108,10 +114,31 @@ struct ScanView: View {
                         VStack(spacing: 12) {
                             if !receiptItems.isEmpty {
                                 Section(header:
-                                            HStack {
-                                    Text("Name")
-                                    Spacer()
-                                    Text("Cost")
+                                            VStack {
+                                    HStack {
+                                        Text("Name")
+                                        Button(action: {
+                                            self.isRecording.toggle()
+                                            if self.isRecording {
+                                                self.startRecording()
+                                            } else {
+                                                self.stopRecording()
+                                            }
+                                        }) {
+                                            Image(systemName: isRecording ? "stop.circle.fill" : "mic.circle.fill")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                        }
+                                        .padding()
+                                        Text("Cost")
+                                    }
+                                    HStack {
+                                        Image(systemName: "info.circle")
+                                            .foregroundColor(.gray)
+                                        Text("Tap name field, then tap annotation to select current row input value.")
+                                            .font(.system(size: 12))
+                                            .foregroundColor(.gray)
+                                    }
                                 }
                                 ) {
                                     ForEach(receiptItems.indices, id: \.self) { index in
@@ -294,8 +321,58 @@ struct ScanView: View {
 
                 }
             }
-
+    
+    private func startRecording() {
+        let recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        recognitionRequest.shouldReportPartialResults = true
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        } catch {
+            print("Audio session error: \(error.localizedDescription)")
         }
+        
+        let inputNode = audioEngine.inputNode
+        let recordingFormat = inputNode.outputFormat(forBus: 0)
+        
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, _) in
+            recognitionRequest.append(buffer)
+        }
+        
+        audioEngine.prepare()
+        do {
+            try audioEngine.start()
+        } catch {
+            print("Audio engine error: \(error.localizedDescription)")
+        }
+        
+        let recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { (result, _) in
+            guard let result = result else { return }
+            self.speechText = result.bestTranscription.formattedString
+            if result.isFinal {
+                self.stopRecording()
+            }
+        }
+    }
+    
+    private func stopRecording() {
+        audioEngine.stop()
+        audioEngine.inputNode.removeTap(onBus: 0)
+        
+        
+        if let editingIndex = editingIndex {
+            if  let number = Double(speechText),  self.isEditingPrice {
+                self.receiptItems[editingIndex].price = number                
+            } else {
+                self.receiptItems[editingIndex].name = speechText
+                
+            }
+            
+        }
+    }
+
+}
     
 
     
