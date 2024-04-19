@@ -3,7 +3,7 @@ import SwiftUI
 struct MainView: View {
     @State private var recentGoals: [GoalModel] = []
     @State private var recentReceipts: [Recepit] = []
-
+//    @Binding var selection:Int
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {

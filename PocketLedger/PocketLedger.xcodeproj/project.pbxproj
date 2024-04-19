@@ -31,6 +31,11 @@
 		CC0EBD582BACF24000B40430 /* ReceiptItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EBD572BACF24000B40430 /* ReceiptItemView.swift */; };
 		CC1C58B62BA7C3FA000E1518 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */; };
 		CC4FB8B42BACCD2600FBCD9C /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FB8B32BACCD2600FBCD9C /* AnnotationView.swift */; };
+		CC6058CA2BD2142C002CA76E /* RecognizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6058C92BD2142C002CA76E /* RecognizeView.swift */; };
+		CC6058CE2BD21747002CA76E /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6058CD2BD21747002CA76E /* ImagePredictor.swift */; };
+		CC6058D02BD217B8002CA76E /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6058CF2BD217B8002CA76E /* VNClassificationObservation+confidenceString.swift */; };
+		CC6058D22BD2185F002CA76E /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6058D12BD2185F002CA76E /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		CC6058D52BD219B3002CA76E /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CC6058D42BD219B3002CA76E /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,11 @@
 		CC1C58B52BA7C3FA000E1518 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CC3574E22BA91FFA00B967E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4FB8B32BACCD2600FBCD9C /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		CC6058C92BD2142C002CA76E /* RecognizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeView.swift; sourceTree = "<group>"; };
+		CC6058CD2BD21747002CA76E /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		CC6058CF2BD217B8002CA76E /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
+		CC6058D12BD2185F002CA76E /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		CC6058D42BD219B3002CA76E /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,11 @@
 				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
 				470285462BACE58500EE5814 /* BarChart.swift */,
 				CC0EBD252BA7CE7000B40430 /* ScanView.swift */,
+				CC6058D42BD219B3002CA76E /* MobileNetV2.mlmodel */,
+				CC6058C92BD2142C002CA76E /* RecognizeView.swift */,
+				CC6058CD2BD21747002CA76E /* ImagePredictor.swift */,
+				CC6058D12BD2185F002CA76E /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				CC6058CF2BD217B8002CA76E /* VNClassificationObservation+confidenceString.swift */,
 				CC3574E22BA91FFA00B967E9 /* Info.plist */,
 				CC0EBD272BA7CF2F00B40430 /* ScanViewModel.swift */,
 				CC0EBD2F2BA7D2A200B40430 /* Configuration.swift */,
@@ -240,6 +255,8 @@
 				470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */,
 				CC0EBD242BA7CE2A00B40430 /* MainView.swift in Sources */,
 				CC0EBD582BACF24000B40430 /* ReceiptItemView.swift in Sources */,
+				CC6058D02BD217B8002CA76E /* VNClassificationObservation+confidenceString.swift in Sources */,
+				CC6058D52BD219B3002CA76E /* MobileNetV2.mlmodel in Sources */,
 				CC0EBD2E2BA7D23500B40430 /* UIImage+Extension.swift in Sources */,
 				CC4FB8B42BACCD2600FBCD9C /* AnnotationView.swift in Sources */,
 				CC0EBD562BACF09600B40430 /* ReceiptView.swift in Sources */,
@@ -253,6 +270,9 @@
 				16B355102BA3FAC40014F307 /* PocketLedgerApp.swift in Sources */,
 				CC0EBD542BACEE8700B40430 /* HistoryView.swift in Sources */,
 				CC0EBD282BA7CF2F00B40430 /* ScanViewModel.swift in Sources */,
+				CC6058CE2BD21747002CA76E /* ImagePredictor.swift in Sources */,
+				CC6058D22BD2185F002CA76E /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				CC6058CA2BD2142C002CA76E /* RecognizeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = FV9KGA2845;
+				DEVELOPMENT_TEAM = TL3TF782MY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -422,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketLedger/Preview Content\"";
-				DEVELOPMENT_TEAM = FV9KGA2845;
+				DEVELOPMENT_TEAM = TL3TF782MY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
