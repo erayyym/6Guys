@@ -191,34 +191,111 @@ class PersistenceController {
     }
 
         
-        private func executeQueryWithParams(query: String, params: [Any?]) -> Bool {
-            var statement: OpaquePointer?
-            if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK {
-                for (index, param) in params.enumerated() {
-                    if let text = param as? String {
-                        sqlite3_bind_text(statement, Int32(index + 1), text, -1, SQLITE_TRANSIENT)
-                    } else if let real = param as? Double {
-                        sqlite3_bind_double(statement, Int32(index + 1), real)
-                    } else if let blob = param as? Data {
-                        blob.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) in
-                            sqlite3_bind_blob(statement, Int32(index + 1), bytes.baseAddress, Int32(bytes.count), SQLITE_TRANSIENT)
-                        }
-                    } else if param == nil {
-                        sqlite3_bind_null(statement, Int32(index + 1))
-                    }
+//        private func executeQueryWithParams(query: String, params: [Any?]) -> Bool {
+//            var statement: OpaquePointer?
+//            if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK {
+//                for (index, param) in params.enumerated() {
+//                    if let text = param as? String {
+//                        sqlite3_bind_text(statement, Int32(index + 1), text, -1, SQLITE_TRANSIENT)
+//                    } else if let real = param as? Double {
+//                        sqlite3_bind_double(statement, Int32(index + 1), real)
+//                    } else if let blob = param as? Data {
+//                        blob.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) in
+//                            sqlite3_bind_blob(statement, Int32(index + 1), bytes.baseAddress, Int32(bytes.count), SQLITE_TRANSIENT)
+//                        }
+//                    } else if param == nil {
+//                        sqlite3_bind_null(statement, Int32(index + 1))
+//                    }
+//                }
+//                if sqlite3_step(statement) == SQLITE_DONE {
+//                    sqlite3_finalize(statement)
+//                    return true
+//                } else {
+//                    print("Error executing query")
+//                    return false
+//                }
+//            } else {
+//                print("Error preparing query")
+//                return false
+//            }
+//        }
+    private func executeQueryWithParams(query: String, params: [Any?]) -> Bool {
+        var statement: OpaquePointer?
+        if sqlite3_prepare_v2(db, query, -1, &statement, nil) != SQLITE_OK {
+            print("Error preparing query: \(String(cString: sqlite3_errmsg(db)))")
+            return false
+        }
+
+        for (index, param) in params.enumerated() {
+            let idx = Int32(index + 1)
+            let bindResult: Int32
+            switch param {
+            case let text as String:
+                bindResult = sqlite3_bind_text(statement, idx, text, -1, SQLITE_TRANSIENT)
+            case let real as Double:
+                bindResult = sqlite3_bind_double(statement, idx, real)
+            case let blob as Data:
+                bindResult = blob.withUnsafeBytes { bytes in
+                    sqlite3_bind_blob(statement, idx, bytes.baseAddress, Int32(bytes.count), SQLITE_TRANSIENT)
                 }
-                if sqlite3_step(statement) == SQLITE_DONE {
-                    sqlite3_finalize(statement)
-                    return true
-                } else {
-                    print("Error executing query")
-                    return false
-                }
-            } else {
-                print("Error preparing query")
+            case nil:
+                bindResult = sqlite3_bind_null(statement, idx)
+            default:
+                print("Unsupported parameter type at index \(index)")
+                sqlite3_finalize(statement)
+                return false
+            }
+            
+            if bindResult != SQLITE_OK {
+                print("Error binding parameter at index \(index): \(String(cString: sqlite3_errmsg(db)))")
+                sqlite3_finalize(statement)
                 return false
             }
         }
+
+        if sqlite3_step(statement) != SQLITE_DONE {
+            print("Error executing query: \(String(cString: sqlite3_errmsg(db)))")
+            sqlite3_finalize(statement)
+            return false
+        }
+
+        sqlite3_finalize(statement)
+        return true
+    }
+    
+    func fetchReceipt(with receiptId: String) -> Recepit? {
+        let query = "SELECT * FROM Receipts WHERE recepitId = '\(receiptId)';"
+        let rows = fetchQuery(query: query)
+        
+        // Since receiptId should be unique, we expect at most one result
+        if let row = rows.first {
+            guard let idString = row["recepitId"],
+                  let dateText = row["date"],
+                  let totalPriceString = row["totalPrice"],
+                  let totalPrice = Double(totalPriceString) else {
+                print("Error: Could not parse receipt data.")
+                return nil
+            }
+            
+            let receiptImageString = row["receiptImage"]
+            let receiptImageData = Data(base64Encoded: receiptImageString ?? "")
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss" // Use the date format that matches your database
+            
+            return Recepit(
+                recepitId: idString,
+                date: dateFormatter.date(from: dateText) ?? Date(),
+                totalPrice: totalPrice,
+                recepitImage: receiptImageData // This will be nil if the receiptImageString is nil
+            )
+        } else {
+            return nil // No receipt found for the given receiptId
+        }
+    }
+
+
+
     
     func fetchAllReceipts() -> [Recepit] {
         let query = "SELECT * FROM Receipts;"

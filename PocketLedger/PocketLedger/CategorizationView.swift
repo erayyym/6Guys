@@ -20,6 +20,11 @@ struct SummaryView: View {
         self.onSubmit = onSubmit
     }
     
+    func uuidToString(_ uuid: UUID) -> String {
+        return uuid.uuidString
+    }
+
+    
     func submitToDB() {
         let totalPrice = receiptItems.reduce(0.0) { $0 + $1.price }
         recepit.totalPrice = totalPrice
@@ -29,35 +34,54 @@ struct SummaryView: View {
         recepit.date = date
         for index in 0...self.receiptItems.count - 1 {
             self.receiptItems[index].date = date
+//            self.receiptItems[index].id = UUID()
         }
-        PersistenceController.shared.insertReceipt(receipt: recepit){ success in
-            if success {
-                // sucess
-                print("recepit save sucess")
-                PersistenceController.shared.insertReceiptItems(items: receiptItems) { success in
-                    if success {
-                       // sucess
-                        let all = PersistenceController.shared.fetchReceiptItems(for: recepit.recepitId)
-                        print(all)
-                        print("receiptItems save sucess")
-                        dismiss()
-                        onSubmit?()
-
-                    } else {
-                        // failure
-                        print("receiptItems save failure")
-                    }
-                }
-                
-                
-            } else {
-               // failure
-                print("recepit save failure")
-
-            }
-        }
-
         
+//        recepit.id = UUID()
+        let newReceId = UUID()
+        let newReceiptId = uuidToString(newReceId)
+        let existingReceipt = PersistenceController.shared.fetchReceipt(with: newReceiptId)
+            
+        if existingReceipt != nil {
+            // Handle the error - the UUID already exists in the database
+            print("Error: Receipt with the same UUID already exists.")
+            return
+        } else {
+            recepit.recepitId = newReceiptId
+            print("也是直接给他submit修好了好吧老底")
+            //            for index in receiptItems.indices {
+            //                // Assign a new UUID to each receipt item to ensure it is unique
+            //                receiptItems[index].receiptId = recepit.receiptId
+            //            }
+            
+            PersistenceController.shared.insertReceipt(receipt: recepit){ success in
+                if success {
+                    // sucess
+                    print("recepit save sucess")
+                    PersistenceController.shared.insertReceiptItems(items: receiptItems) { success in
+                        if success {
+                            // sucess
+                            let all = PersistenceController.shared.fetchReceiptItems(for: recepit.recepitId)
+                            print(all)
+                            print("receiptItems save sucess")
+                            dismiss()
+                            onSubmit?()
+                            
+                        } else {
+                            // failure
+                            print("receiptItems save failure")
+                        }
+                    }
+                    
+                    
+                } else {
+                    // failure
+                    print("recepit save failure")
+                    
+                }
+            }
+            
+        }
     }
     
 //    
