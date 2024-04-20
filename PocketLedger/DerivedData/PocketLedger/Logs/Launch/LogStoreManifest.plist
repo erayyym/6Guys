@@ -128,6 +128,128 @@
 			<key>uniqueIdentifier</key>
 			<string>0ACDDE5D-5F32-48D3-AF70-33853D029029</string>
 		</dict>
+		<key>168B3730-BDAC-4683-89EC-8C69FEDCE4EB</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>7E0B2060-B2DD-42AE-A1B6-565BC4C2E381</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>7</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-PocketLedger-2024.04.20_03-22-50--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>7</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PocketLedger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PocketLedger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PocketLedger</string>
+			<key>timeStartedRecording</key>
+			<real>735290570.86537302</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>168B3730-BDAC-4683-89EC-8C69FEDCE4EB</string>
+		</dict>
+		<key>1C2218C8-7D26-426B-AA36-FD12A6E46D67</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>637CF34C-76F0-43C5-BE81-F5CF8C8803C8</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>7</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-PocketLedger-2024.04.20_03-14-30--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>7</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PocketLedger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PocketLedger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PocketLedger</string>
+			<key>timeStartedRecording</key>
+			<real>735290070.91722798</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>1C2218C8-7D26-426B-AA36-FD12A6E46D67</string>
+		</dict>
 		<key>200346FE-2813-4670-B6F4-A50BE865537C</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -310,6 +432,67 @@
 			<string>Run PocketLedger</string>
 			<key>uniqueIdentifier</key>
 			<string>4195001E-EA77-464D-ADF9-1CE09DEBAB2E</string>
+		</dict>
+		<key>4290BC39-58EA-4871-9A83-CA5365FF2BAA</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>0C4C85C1-BEE7-4E28-A8B8-09DBB32BC423</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>7</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-PocketLedger-2024.04.20_03-29-06--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>7</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PocketLedger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PocketLedger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PocketLedger</string>
+			<key>timeStartedRecording</key>
+			<real>735290946.54309905</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>4290BC39-58EA-4871-9A83-CA5365FF2BAA</string>
 		</dict>
 		<key>48A06326-080B-49B9-914B-6994CE0F9957</key>
 		<dict>
