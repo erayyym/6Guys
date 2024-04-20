@@ -15,70 +15,68 @@ struct FinancialGoalRowView: View {
     @State private var selectedDate = Date()
     @State private var monthlyReports: [MonthlyReport] = []
     @State private var receiptItems: [RecepitItem] = []
-//    let receipt: Recepit
     
-//    var budgetReminderView: some View {
-//        Group {
-//            if let days = daysSinceLastBudgetAction {
-//                if days < 1{
-//                    Text("You've been keeping your budgetting! Nice job!!")
-//                        .foregroundColor(.primary)
-//                        .font(.headline)
-//                        .padding()
-//                        .background(Color.gray)
-//                        .cornerRadius(10)
-//                        .overlay(
-//                            RoundedRectangle(cornerRadius: 10)
-//                                .stroke(Color.gray, lineWidth: 2)
-//                        )
-//                        .padding(.horizontal)
+//    var body: some View {
+//        VStack{
+////            budgetReminderView
+//            HStack() {
+//                Image(systemName: "circle")
+//                    .resizable()
+//                    .frame(width: 10, height: 10)
+//                    .padding(.horizontal,12)
+//                VStack(alignment: .leading) {
+//                    Text(String(format: "Spend less than $ %.2f for \(goalModel.goal)", goalModel.amount))
+//                    Text(String(format: "already spent: "))
+//                    Text("Due: \(dueDateText)")
+//                        .font(.subheadline)
 //                }
-//                else{
-//                    Text("You have not done budgeting in \(days) days.")
-//                        .foregroundColor(.white)
-//                        .font(.headline)
-//                        .padding()
-//                        .background(Color.red)
-//                        .cornerRadius(10)
-//                        .overlay(
-//                            RoundedRectangle(cornerRadius: 10)
-//                                .stroke(Color.red, lineWidth: 2)
-//                        )
-//                        .padding(.horizontal)
-//                }
-//             }
-//            else{
-//                Text("Lets start budgetting!")
-//                    .foregroundColor(.blue)
-//                    .font(.headline)
-//                    .padding()
-//                    .background(Color.clear)
-//                    .cornerRadius(10) 
-//                    .overlay(
-//                        RoundedRectangle(cornerRadius: 10)
-//                            .stroke(Color.blue, lineWidth: 2)
-//                    )
-//                    .padding(.horizontal)
+//                Spacer()
 //            }
 //        }
-//    }
-    
     var body: some View {
-        VStack{
-//            budgetReminderView
-            HStack() {
-                Image(systemName: "circle")
-                    .resizable()
-                    .frame(width: 10, height: 10)
-                    .padding(.horizontal,12)
-                VStack(alignment: .leading) {
-                    Text(String(format: "Spend less than $ %.2f for \(goalModel.goal)", goalModel.amount))
-                    Text(String(format: "already spent: "))
+        HStack() {
+            Image(systemName: goalModel.achieved ? "checkmark.circle.fill" : "circle")
+                .resizable()
+                .frame(width: 20, height: 20)
+                .padding(.horizontal, 12)
+                .foregroundColor(goalModel.achieved ? .green : .blue)
+            VStack(alignment: .leading) {
+                if goalModel.goalType == "Fixed" {
+                    Text(String(format: "Save $ %.2f for \(goalModel.goal)", goalModel.amount))
+                        .font(Font.system(size: 16).weight(.bold))
+                        .foregroundColor(.blue)
+                    
+                    if Int(goalModel.percent) > 0 {
+                        Text("Percent:\(Int(goalModel.percent))%")
+                            .font(Font.system(size: 14).weight(.semibold))
+                            .foregroundColor(.blue)
+                    }
+                    
+                    
                     Text("Due: \(dueDateText)")
                         .font(.subheadline)
+                } else if goalModel.goalType == "Percent" {
+                    Text(String(format: "Save %.0f%% compared to last month", goalModel.comparedPercent))
+                        .font(Font.system(size: 16).weight(.bold))
+                        .foregroundColor(.blue)
+                    if Int(goalModel.percent) > 0 {
+                        Text("Percent:\(Int(goalModel.percent))%")
+                            .font(Font.system(size: 14).weight(.semibold))
+                            .foregroundColor(.blue)
+                    }
+                } else {
+                    Text(String(format: "Save $ %.2f every %.0f days", goalModel.amount, goalModel.frequency))
+                        .font(Font.system(size: 16).weight(.bold))
+                        .foregroundColor(.blue)
+                    if Int(goalModel.percent) > 0 {
+                        Text("Percent:\(Int(goalModel.percent))%")
+                            .font(Font.system(size: 14).weight(.semibold))
+                            .foregroundColor(.blue)
+                    }
                 }
-                Spacer()
+                
             }
+            
         }
         .onTapGesture {
         }
@@ -98,12 +96,12 @@ struct FinancialGoalRowView: View {
                 }
             }
         }
-        .onAppear(){
-            let formattedDate = convertDateToYearMonthFormat(dueDateText: dueDateText)
-            monthlyReports = PersistenceController.shared.fetchMonthlyReports(for: dueDateText)
-            print(monthlyReports)
-            print(formattedDate)
-        }
+//        .onAppear(){
+//            let formattedDate = convertDateToYearMonthFormat(dueDateText: dueDateText)
+//            monthlyReports = PersistenceController.shared.fetchMonthlyReports(for: dueDateText)
+//            print(monthlyReports)
+//            print(formattedDate)
+//        }
 //        .onAppear(){
 //            receiptItems = PersistenceController.shared.fetchReceiptItems(for: receipt.recepitId)
 //            for item in receiptItems{

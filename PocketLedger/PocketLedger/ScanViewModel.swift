@@ -33,6 +33,15 @@ struct RecepitItem {
     var recepitId: String = ""
 
 }
+//struct GoalModel {
+//    var id = UUID()
+//    var goal: String = ""
+//    var amount: Double = 0.0
+//    var date:Date = Date()
+//    var createDate:Date = Date()
+//    var achieved: Bool = false
+//
+//}
 struct GoalModel {
     var id = UUID()
     var goal: String = ""
@@ -40,6 +49,9 @@ struct GoalModel {
     var date:Date = Date()
     var createDate:Date = Date()
     var achieved: Bool = false
-
+    var percent: Double = 0
+    var goalType:String = ""
+    var comparedPercent:Double = 0
+    var frequency:Double = 0.0
 }
 

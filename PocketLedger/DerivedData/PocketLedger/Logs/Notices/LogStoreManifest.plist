@@ -2634,6 +2634,42 @@
 			<key>uniqueIdentifier</key>
 			<string>D369F141-448C-4F12-9C58-72BCFA6AAC17</string>
 		</dict>
+		<key>D77AE45B-D593-48B3-AD7B-4C236D3444E4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D77AE45B-D593-48B3-AD7B-4C236D3444E4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvY2Fyb2xteXJcL3BvY2tldExlXC9Qb2NrZXRMZWRnZXJcL1BvY2tldExlZGdlci54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>735341673.93159604</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>D77AE45B-D593-48B3-AD7B-4C236D3444E4</string>
+		</dict>
 		<key>DA6CC0D3-6025-4265-B0B3-75D93E62C0CB</key>
 		<dict>
 			<key>className</key>
@@ -2813,6 +2849,42 @@
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
 			<string>DE675474-3F6B-4B1A-B104-4119CAACD593</string>
+		</dict>
+		<key>DFD6DA12-614E-4C80-82EB-5CCA8FD72C28</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DFD6DA12-614E-4C80-82EB-5CCA8FD72C28.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>8</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjE2QjM1NTBCMkJBM0ZBQzQwMDE0RjMwNyIsImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvY2Fyb2xteXJcL3BvY2tldExlXC9Qb2NrZXRMZWRnZXJcL1BvY2tldExlZGdlci54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludCI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>735341673.93159604</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>DFD6DA12-614E-4C80-82EB-5CCA8FD72C28</string>
 		</dict>
 		<key>E03D70BA-6BCC-4C8E-ADD3-51E7DCAAE8C0</key>
 		<dict>
@@ -3029,6 +3101,42 @@
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
 			<string>E862EACD-B5F0-4CB2-ACB2-570DB36C1E67</string>
+		</dict>
+		<key>EBF6EBC9-FC9D-4218-9199-23EBB9F88E14</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EBF6EBC9-FC9D-4218-9199-23EBB9F88E14.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCIsInR5cGUiOnsiYnVpbGRTeXN0ZW1UYXNrIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>735341673.93159604</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>EBF6EBC9-FC9D-4218-9199-23EBB9F88E14</string>
 		</dict>
 		<key>ED4A428A-34A7-4DEF-A25C-5B0AD644ECB0</key>
 		<dict>

@@ -476,18 +476,31 @@ class PersistenceController {
 //            let achieved = goal.achieved ? 1:0
 //            completion(executeQueryWithParams(query: query, params: [goal.id.uuidString, goal.goal, goal.amount, dateString, createDateStrig, achieved]))
 //        }
+//    
+//    func insertGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
+//        let query = """
+//            INSERT INTO Goals (id, goal, amount, date, createDate, achieved)
+//            VALUES (?, ?, ?, ?, ?, ?);
+//        """
+//        
+//        let dateString = dateFormatter.string(from: goal.date)
+//        let createDateStrig = dateFormatter.string(from: goal.createDate)
+//        let achieved = goal.achieved ? 1:0
+//        completion(executeQueryWithParams(query: query, params: [goal.id.uuidString, goal.goal, goal.amount, dateString, createDateStrig, achieved]))
+//    }
     
     func insertGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
         let query = """
-            INSERT INTO Goals (id, goal, amount, date, createDate, achieved)
-            VALUES (?, ?, ?, ?, ?, ?);
+            INSERT INTO Goals (id, goal, amount, date, createDate, achieved, percent, goalType, comparedPercent, frequency)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
         """
         
         let dateString = dateFormatter.string(from: goal.date)
         let createDateStrig = dateFormatter.string(from: goal.createDate)
         let achieved = goal.achieved ? 1:0
-        completion(executeQueryWithParams(query: query, params: [goal.id.uuidString, goal.goal, goal.amount, dateString, createDateStrig, achieved]))
+        completion(executeQueryWithParams(query: query, params: [goal.id.uuidString, goal.goal, goal.amount, dateString, createDateStrig, achieved, goal.percent, goal.goalType, goal.comparedPercent, goal.frequency]))
     }
+
 
         
         func deleteGoal(goalId: String, completion: @escaping (Bool) -> Void) {
@@ -498,32 +511,65 @@ class PersistenceController {
         
         
 
-        func fetchGoals(completion: @escaping ([GoalModel]) -> Void) {
-            let query = "SELECT * FROM Goals ORDER BY createDate DESC;"
-            let rows = fetchQuery(query: query)
-            var goals = [GoalModel]()
-            
-            for row in rows {
-                if let idString = row["id"],
-                   let goal = row["goal"],
-                   let amountString = row["amount"],
-                   let amount = Double(amountString),
-                   let achievedString = row["achieved"],
-                   let achieved = Int(achievedString),
-
-                   let dateString = row["date"],
-                   let createDateStr = row["createDate"],
-                   let id = UUID(uuidString: idString),
-                   let date = dateFormatter.date(from: dateString),
-                   let createDate = dateFormatter.date(from: createDateStr) {
-                    
-                    let goalModel = GoalModel(id: id, goal: goal, amount: amount, date: date, createDate: createDate, achieved: achieved == 0 ? true : false)
-                    goals.append(goalModel)
-                }
+//        func fetchGoals(completion: @escaping ([GoalModel]) -> Void) {
+//            let query = "SELECT * FROM Goals ORDER BY createDate DESC;"
+//            let rows = fetchQuery(query: query)
+//            var goals = [GoalModel]()
+//            
+//            for row in rows {
+//                if let idString = row["id"],
+//                   let goal = row["goal"],
+//                   let amountString = row["amount"],
+//                   let amount = Double(amountString),
+//                   let achievedString = row["achieved"],
+//                   let achieved = Int(achievedString),
+//
+//                   let dateString = row["date"],
+//                   let createDateStr = row["createDate"],
+//                   let id = UUID(uuidString: idString),
+//                   let date = dateFormatter.date(from: dateString),
+//                   let createDate = dateFormatter.date(from: createDateStr) {
+//                    
+//                    let goalModel = GoalModel(id: id, goal: goal, amount: amount, date: date, createDate: createDate, achieved: achieved == 0 ? true : false)
+//                    goals.append(goalModel)
+//                }
+//            }
+//            
+//            completion(goals)
+//        }
+    
+    func fetchGoals(completion: @escaping ([GoalModel]) -> Void) {
+        let query = "SELECT * FROM Goals ORDER BY createDate DESC;"
+        let rows = fetchQuery(query: query)
+        var goals = [GoalModel]()
+        
+        for row in rows {
+            if let idString = row["id"],
+               let goal = row["goal"],
+               let amountString = row["amount"],
+               let amount = Double(amountString),
+               let achievedString = row["achieved"],
+               let achieved = Int(achievedString),
+               let comparedPercentString = row["comparedPercent"],
+               let comparedPercent = Double(comparedPercentString),
+               let frequencyString = row["frequency"],
+               let frequency = Double(frequencyString),
+               let percentString = row["percent"],
+               let percent = Double(percentString),
+               let dateString = row["date"],
+               let createDateStr = row["createDate"],
+               let id = UUID(uuidString: idString),
+               let goalType = row["goalType"],
+               let date = dateFormatter.date(from: dateString),
+               let createDate = dateFormatter.date(from: createDateStr) {
+                
+                let goalModel = GoalModel(id: id, goal: goal, amount: amount, date: date, createDate: createDate, achieved: achieved == 1 ? true : false, percent: percent, goalType: goalType, comparedPercent: comparedPercent, frequency: frequency)
+                goals.append(goalModel)
             }
-            
-            completion(goals)
         }
+        
+        completion(goals)
+    }
     
     func hasAnyGoals(completion: @escaping (Bool) -> Void) {
         let query = "SELECT EXISTS(SELECT 1 FROM Goals);"
@@ -545,19 +591,57 @@ class PersistenceController {
     }
 
     
+    
     func updateGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
         let query = """
-                    UPDATE Goals
-                    SET goal = ?,
-                        amount = ?,
-                        date = ?,
-                        achieved = ?
-                    WHERE id = ?;
-                """
+          UPDATE Goals
+          SET goal = ?,
+              amount = ?,
+              date = ?,
+              achieved = ?,
+              percent = ?,
+              goalType = ?,
+              comparedPercent = ?,
+              frequency = ?
+          WHERE id = ?;
+"""
         
         let dateString = dateFormatter.string(from: goal.date)
         let achievedValue = goal.achieved ? 1 : 0
         
-        completion(executeQueryWithParams(query: query, params: [goal.goal, goal.amount, dateString, achievedValue, goal.id.uuidString]))
+        completion(executeQueryWithParams(query: query, params: [goal.goal, goal.amount, dateString, achievedValue, goal.percent, goal.goalType, goal.comparedPercent, goal.frequency ,goal.id.uuidString]))
+    }
+    
+    func fetchLatestTwoGoals(completion: @escaping ([GoalModel]) -> Void) {
+        let query = "SELECT * FROM Goals ORDER BY createDate DESC LIMIT 2;"
+        let rows = fetchQuery(query: query)
+        var goals = [GoalModel]()
+        
+        for row in rows {
+            if let idString = row["id"],
+               let goal = row["goal"],
+               let amountString = row["amount"],
+               let amount = Double(amountString),
+               let achievedString = row["achieved"],
+               let achieved = Int(achievedString),
+               let dateString = row["date"],
+               let createDateStr = row["createDate"],
+               let percentString = row["percent"],
+               let percent = Double(percentString),
+               let id = UUID(uuidString: idString),
+               let goalType = row["goalType"],
+               let comparedPercentString = row["comparedPercent"],
+               let comparedPercent = Double(comparedPercentString),
+               let frequencyString = row["frequency"],
+               let frequency = Double(frequencyString),
+               let date = dateFormatter.date(from: dateString),
+               let createDate = dateFormatter.date(from: createDateStr) {
+                
+                let goalModel = GoalModel(id: id, goal: goal, amount: amount, date: date, createDate: createDate, achieved: achieved == 1 ? true : false, percent: percent, goalType: goalType, comparedPercent: comparedPercent, frequency: frequency)
+                goals.append(goalModel)
+            }
+        }
+        
+        completion(goals)
     }
 }

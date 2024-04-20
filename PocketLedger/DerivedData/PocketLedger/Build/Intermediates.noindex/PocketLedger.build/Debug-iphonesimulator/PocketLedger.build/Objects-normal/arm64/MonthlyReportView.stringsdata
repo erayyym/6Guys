@@ -4,6 +4,10 @@
     "Localizable": [
       {
         "comment": "",
+        "key": "Recepit report"
+      },
+      {
+        "comment": "",
         "key": "Month: %@"
       },
       {
