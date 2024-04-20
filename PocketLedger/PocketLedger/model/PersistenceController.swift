@@ -191,77 +191,77 @@ class PersistenceController {
     }
 
         
-//        private func executeQueryWithParams(query: String, params: [Any?]) -> Bool {
-//            var statement: OpaquePointer?
-//            if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK {
-//                for (index, param) in params.enumerated() {
-//                    if let text = param as? String {
-//                        sqlite3_bind_text(statement, Int32(index + 1), text, -1, SQLITE_TRANSIENT)
-//                    } else if let real = param as? Double {
-//                        sqlite3_bind_double(statement, Int32(index + 1), real)
-//                    } else if let blob = param as? Data {
-//                        blob.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) in
-//                            sqlite3_bind_blob(statement, Int32(index + 1), bytes.baseAddress, Int32(bytes.count), SQLITE_TRANSIENT)
-//                        }
-//                    } else if param == nil {
-//                        sqlite3_bind_null(statement, Int32(index + 1))
-//                    }
+        private func executeQueryWithParams(query: String, params: [Any?]) -> Bool {
+            var statement: OpaquePointer?
+            if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK {
+                for (index, param) in params.enumerated() {
+                    if let text = param as? String {
+                        sqlite3_bind_text(statement, Int32(index + 1), text, -1, SQLITE_TRANSIENT)
+                    } else if let real = param as? Double {
+                        sqlite3_bind_double(statement, Int32(index + 1), real)
+                    } else if let blob = param as? Data {
+                        blob.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) in
+                            sqlite3_bind_blob(statement, Int32(index + 1), bytes.baseAddress, Int32(bytes.count), SQLITE_TRANSIENT)
+                        }
+                    } else if param == nil {
+                        sqlite3_bind_null(statement, Int32(index + 1))
+                    }
+                }
+                if sqlite3_step(statement) == SQLITE_DONE {
+                    sqlite3_finalize(statement)
+                    return true
+                } else {
+                    print("Error executing query")
+                    return false
+                }
+            } else {
+                print("Error preparing query")
+                return false
+            }
+        }
+//    private func executeQueryWithParams(query: String, params: [Any?]) -> Bool {
+//        var statement: OpaquePointer?
+//        if sqlite3_prepare_v2(db, query, -1, &statement, nil) != SQLITE_OK {
+//            print("Error preparing query: \(String(cString: sqlite3_errmsg(db)))")
+//            return false
+//        }
+//
+//        for (index, param) in params.enumerated() {
+//            let idx = Int32(index + 1)
+//            let bindResult: Int32
+//            switch param {
+//            case let text as String:
+//                bindResult = sqlite3_bind_text(statement, idx, text, -1, SQLITE_TRANSIENT)
+//            case let real as Double:
+//                bindResult = sqlite3_bind_double(statement, idx, real)
+//            case let blob as Data:
+//                bindResult = blob.withUnsafeBytes { bytes in
+//                    sqlite3_bind_blob(statement, idx, bytes.baseAddress, Int32(bytes.count), SQLITE_TRANSIENT)
 //                }
-//                if sqlite3_step(statement) == SQLITE_DONE {
-//                    sqlite3_finalize(statement)
-//                    return true
-//                } else {
-//                    print("Error executing query")
-//                    return false
-//                }
-//            } else {
-//                print("Error preparing query")
+//            case nil:
+//                bindResult = sqlite3_bind_null(statement, idx)
+//            default:
+//                print("Unsupported parameter type at index \(index)")
+//                sqlite3_finalize(statement)
+//                return false
+//            }
+//            
+//            if bindResult != SQLITE_OK {
+//                print("Error binding parameter at index \(index): \(String(cString: sqlite3_errmsg(db)))")
+//                sqlite3_finalize(statement)
 //                return false
 //            }
 //        }
-    private func executeQueryWithParams(query: String, params: [Any?]) -> Bool {
-        var statement: OpaquePointer?
-        if sqlite3_prepare_v2(db, query, -1, &statement, nil) != SQLITE_OK {
-            print("Error preparing query: \(String(cString: sqlite3_errmsg(db)))")
-            return false
-        }
-
-        for (index, param) in params.enumerated() {
-            let idx = Int32(index + 1)
-            let bindResult: Int32
-            switch param {
-            case let text as String:
-                bindResult = sqlite3_bind_text(statement, idx, text, -1, SQLITE_TRANSIENT)
-            case let real as Double:
-                bindResult = sqlite3_bind_double(statement, idx, real)
-            case let blob as Data:
-                bindResult = blob.withUnsafeBytes { bytes in
-                    sqlite3_bind_blob(statement, idx, bytes.baseAddress, Int32(bytes.count), SQLITE_TRANSIENT)
-                }
-            case nil:
-                bindResult = sqlite3_bind_null(statement, idx)
-            default:
-                print("Unsupported parameter type at index \(index)")
-                sqlite3_finalize(statement)
-                return false
-            }
-            
-            if bindResult != SQLITE_OK {
-                print("Error binding parameter at index \(index): \(String(cString: sqlite3_errmsg(db)))")
-                sqlite3_finalize(statement)
-                return false
-            }
-        }
-
-        if sqlite3_step(statement) != SQLITE_DONE {
-            print("Error executing query: \(String(cString: sqlite3_errmsg(db)))")
-            sqlite3_finalize(statement)
-            return false
-        }
-
-        sqlite3_finalize(statement)
-        return true
-    }
+//
+//        if sqlite3_step(statement) != SQLITE_DONE {
+//            print("Error executing query: \(String(cString: sqlite3_errmsg(db)))")
+//            sqlite3_finalize(statement)
+//            return false
+//        }
+//
+//        sqlite3_finalize(statement)
+//        return true
+//    }
     
     func fetchReceipt(with receiptId: String) -> Recepit? {
         let query = "SELECT * FROM Receipts WHERE recepitId = '\(receiptId)';"
@@ -465,17 +465,29 @@ class PersistenceController {
     }
 
 //    Goals
+//    func insertGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
+//            let query = """
+//                INSERT INTO Goals (id, goal, amount, date, createDate, achieved)
+//                VALUES (?, ?, ?, ?, ?, ?);
+//            """
+//            
+//            let dateString = dateFormatter.string(from: goal.date)
+//            let createDateStrig = dateFormatter.string(from: goal.createDate)
+//            let achieved = goal.achieved ? 1:0
+//            completion(executeQueryWithParams(query: query, params: [goal.id.uuidString, goal.goal, goal.amount, dateString, createDateStrig, achieved]))
+//        }
+    
     func insertGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
-            let query = """
-                INSERT INTO Goals (id, goal, amount, date, createDate, achieved)
-                VALUES (?, ?, ?, ?, ?, ?);
-            """
-            
-            let dateString = dateFormatter.string(from: goal.date)
-            let createDateStrig = dateFormatter.string(from: goal.createDate)
-            let achieved = goal.achieved ? 1:0
-            completion(executeQueryWithParams(query: query, params: [goal.id.uuidString, goal.goal, goal.amount, dateString, createDateStrig, achieved]))
-        }
+        let query = """
+            INSERT INTO Goals (id, goal, amount, date, createDate, achieved)
+            VALUES (?, ?, ?, ?, ?, ?);
+        """
+        
+        let dateString = dateFormatter.string(from: goal.date)
+        let createDateStrig = dateFormatter.string(from: goal.createDate)
+        let achieved = goal.achieved ? 1:0
+        completion(executeQueryWithParams(query: query, params: [goal.id.uuidString, goal.goal, goal.amount, dateString, createDateStrig, achieved]))
+    }
 
         
         func deleteGoal(goalId: String, completion: @escaping (Bool) -> Void) {
@@ -529,4 +541,3 @@ class PersistenceController {
         completion(executeQueryWithParams(query: query, params: [goal.goal, goal.amount, dateString, achievedValue, goal.id.uuidString]))
     }
 }
-

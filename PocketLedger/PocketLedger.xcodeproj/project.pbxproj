@@ -17,6 +17,7 @@
 		470285342BA8C9EF00EE5814 /* ReceiptModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470285332BA8C9EF00EE5814 /* ReceiptModels.swift */; };
 		470285472BACE58500EE5814 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470285462BACE58500EE5814 /* BarChart.swift */; };
 		6765990C2BA8FF670044F983 /* gptapi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765990B2BA8FF670044F983 /* gptapi.swift */; };
+		67BA45412BD3844600DD6EAC /* ImageRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA45402BD3844600DD6EAC /* ImageRecognizer.swift */; };
 		80AF32DB2BAD4523001A9C37 /* AddFinancialGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AF32D82BAD4523001A9C37 /* AddFinancialGoalView.swift */; };
 		80AF32DC2BAD4523001A9C37 /* FinancialGoalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AF32D92BAD4523001A9C37 /* FinancialGoalRowView.swift */; };
 		80AF32DD2BAD4523001A9C37 /* FinancialGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AF32DA2BAD4523001A9C37 /* FinancialGoalView.swift */; };
@@ -50,6 +51,7 @@
 		470285332BA8C9EF00EE5814 /* ReceiptModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModels.swift; sourceTree = "<group>"; };
 		470285462BACE58500EE5814 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		6765990B2BA8FF670044F983 /* gptapi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gptapi.swift; sourceTree = "<group>"; };
+		67BA45402BD3844600DD6EAC /* ImageRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecognizer.swift; sourceTree = "<group>"; };
 		80AF32D82BAD4523001A9C37 /* AddFinancialGoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFinancialGoalView.swift; sourceTree = "<group>"; };
 		80AF32D92BAD4523001A9C37 /* FinancialGoalRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialGoalRowView.swift; sourceTree = "<group>"; };
 		80AF32DA2BAD4523001A9C37 /* FinancialGoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialGoalView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				CC0EBD2D2BA7D23500B40430 /* UIImage+Extension.swift */,
 				CC0EBD232BA7CE2A00B40430 /* MainView.swift */,
 				CC0EBD532BACEE8700B40430 /* HistoryView.swift */,
+				67BA45402BD3844600DD6EAC /* ImageRecognizer.swift */,
 				CC0EBD552BACF09600B40430 /* ReceiptView.swift */,
 				CC0EBD572BACF24000B40430 /* ReceiptItemView.swift */,
 				16B3551F2BA3FAF90014F307 /* CategorizationView.swift */,
@@ -252,6 +255,7 @@
 				470285472BACE58500EE5814 /* BarChart.swift in Sources */,
 				16B355222BA3FB080014F307 /* AnalysisView.swift in Sources */,
 				80AF32DB2BAD4523001A9C37 /* AddFinancialGoalView.swift in Sources */,
+				67BA45412BD3844600DD6EAC /* ImageRecognizer.swift in Sources */,
 				470285322BA8C91A00EE5814 /* PersistenceController.swift in Sources */,
 				CC0EBD242BA7CE2A00B40430 /* MainView.swift in Sources */,
 				CC0EBD582BACF24000B40430 /* ReceiptItemView.swift in Sources */,

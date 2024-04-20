@@ -42,7 +42,7 @@
 			<key>uniqueIdentifier</key>
 			<string>2849258C-4461-4D2E-8386-8577C420D8F2</string>
 		</dict>
-		<key>30BA0D32-F058-4727-ADB8-A7D83BA694B2</key>
+		<key>CCA69C66-06A8-4186-89BC-F09D43418D5C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -51,7 +51,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
 			<key>fileName</key>
-			<string>30BA0D32-F058-4727-ADB8-A7D83BA694B2.xcactivitylog</string>
+			<string>CCA69C66-06A8-4186-89BC-F09D43418D5C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -70,49 +70,13 @@
 			<key>signature</key>
 			<string>Update Signing</string>
 			<key>timeStartedRecording</key>
-			<real>735275314.20594895</real>
+			<real>735282227.69892395</real>
 			<key>timeStoppedRecording</key>
-			<real>735275314.20982206</real>
+			<real>735282227.70273101</real>
 			<key>title</key>
 			<string>Update Signing</string>
 			<key>uniqueIdentifier</key>
-			<string>30BA0D32-F058-4727-ADB8-A7D83BA694B2</string>
-		</dict>
-		<key>540B688D-49CA-46E1-B607-3B23425F4B65</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
-			<key>fileName</key>
-			<string>540B688D-49CA-46E1-B607-3B23425F4B65.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>signature</key>
-			<string>Update Signing</string>
-			<key>timeStartedRecording</key>
-			<real>735168769.87984598</real>
-			<key>timeStoppedRecording</key>
-			<real>735168771.17501903</real>
-			<key>title</key>
-			<string>Update Signing</string>
-			<key>uniqueIdentifier</key>
-			<string>540B688D-49CA-46E1-B607-3B23425F4B65</string>
+			<string>CCA69C66-06A8-4186-89BC-F09D43418D5C</string>
 		</dict>
 	</dict>
 </dict>

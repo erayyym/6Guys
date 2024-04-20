@@ -22,11 +22,11 @@ struct FinancialGoalRowView: View {
             if let days = daysSinceLastBudgetAction {
                 if days < 1{
                     Text("You've been keeping your budgetting! Nice job!!")
-                        .foregroundColor(.primary) // Change text color if more than 2 days
+                        .foregroundColor(.primary)
                         .font(.headline)
                         .padding()
-                        .background(Color.gray) // Change background color if more than 2 days
-                        .cornerRadius(10) // Rounded corners
+                        .background(Color.gray)
+                        .cornerRadius(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.gray, lineWidth: 2)
@@ -35,11 +35,11 @@ struct FinancialGoalRowView: View {
                 }
                 else{
                     Text("You have not done budgeting in \(days) days.")
-                        .foregroundColor(.white) // Change text color if more than 2 days
+                        .foregroundColor(.white)
                         .font(.headline)
                         .padding()
-                        .background(Color.red) // Change background color if more than 2 days
-                        .cornerRadius(10) // Rounded corners
+                        .background(Color.red)
+                        .cornerRadius(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.red, lineWidth: 2)
@@ -49,11 +49,11 @@ struct FinancialGoalRowView: View {
              }
             else{
                 Text("Lets start budgetting!")
-                    .foregroundColor(.blue) // Change text color if more than 2 days
+                    .foregroundColor(.blue)
                     .font(.headline)
                     .padding()
-                    .background(Color.clear) // Change background color if more than 2 days
-                    .cornerRadius(10) // Rounded corners
+                    .background(Color.clear)
+                    .cornerRadius(10) 
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.blue, lineWidth: 2)
