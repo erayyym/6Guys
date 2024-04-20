@@ -89,10 +89,10 @@ struct MonthlyReportView: View {
         let currentDate = Date()
 
         let calendar = Calendar.current
-        let pastThreeMonthsRange = calendar.date(byAdding: .month, value: -3, to: currentDate)! ..< currentDate
+        let pastThreeMonthsRange = calendar.date(byAdding: .month, value: -2, to: currentDate)! ... currentDate
 
         var date = pastThreeMonthsRange.lowerBound
-        while date < pastThreeMonthsRange.upperBound {
+        while date <= pastThreeMonthsRange.upperBound {
             let formattedMonthString = formattedMonth(from: date)
             
             let reports = PersistenceController.shared.fetchMonthlyReports(for: formattedMonthString)
@@ -104,6 +104,7 @@ struct MonthlyReportView: View {
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: pastThreeMonthsData, options: .prettyPrinted)
             if let jsonString = String(data: jsonData, encoding: .utf8) {
+                print(jsonString)
                 return jsonString
             } else {
                 print("Failed to convert JSON data to string.")
