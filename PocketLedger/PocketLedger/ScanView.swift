@@ -20,6 +20,7 @@ struct ScanView: View {
     @State private var names: [String] = []
     @State private var recognizedText = ""
     @State var image: UIImage?
+    @State var recognizeImage: UIImage?
     @State private var showingActionSheet = false
     @State private var showingSubmitView = false
     private let randomUUID = UUID()
@@ -38,6 +39,8 @@ struct ScanView: View {
     @State private var speechText: String = ""
     let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     let audioEngine = AVAudioEngine()
+    @State private var isRecognizerPresented = false
+    @StateObject private var imageRecognizer = ImageRecognizer()
     
     private var numberFormatter: NumberFormatter {
         let formatter = NumberFormatter()
@@ -157,6 +160,15 @@ struct ScanView: View {
                                                 self.isEditingName = true
                                                 self.isEditingPrice = false
                                             }
+                                            Button(action: {
+                                                    self.editingIndex = index
+                                                    self.isEditingName = true
+                                                    self.isEditingPrice = false
+                                                    openCameraForRecognize()
+                                                }) {
+                                                    Image(systemName: "camera.fill")
+                                                        .foregroundColor(.blue)
+                                            }
                                             HStack {
                                                 Text("$")
                                                 TextField("Cost", text: Binding<String>(
@@ -242,7 +254,19 @@ struct ScanView: View {
             })
 
         }
-        
+        .sheet(isPresented: $isRecognizerPresented) {
+            if let sourceType = self.sourceType {
+                ImagePicker(image: self.$recognizeImage, sourceType: sourceType)
+                    .onChange(of: recognizeImage) { newImage in
+                        if let recognizeImage = newImage {
+                            imageRecognizer.recognizePicture(recognizeImage)
+                            if let editingIndex = editingIndex {
+                                self.receiptItems[editingIndex].name = imageRecognizer.result
+                            }
+                        }
+                    }
+            }
+        }
     }
     
     
@@ -254,6 +278,10 @@ struct ScanView: View {
     func openPhotoLibrary() {
         sourceType = .photoLibrary
         isImagePickerPresented = true
+    }
+    func openCameraForRecognize() {
+        sourceType = .camera
+        isRecognizerPresented = true
     }
     
     private func recognizeTextIfNeeded() {
