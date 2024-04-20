@@ -12,6 +12,7 @@ struct SummaryView: View {
     var onSubmit: (() -> Void)?
     @Binding private var recepit: Recepit
     @Binding private var receiptItems: [RecepitItem]
+    @State private var date:Date = Date()
     
     init(recepit: Binding<Recepit>, receiptItems:Binding< [RecepitItem]>, onSubmit: (() -> Void)?) {
         self._recepit = recepit
@@ -20,6 +21,15 @@ struct SummaryView: View {
     }
     
     func submitToDB() {
+        let totalPrice = receiptItems.reduce(0.0) { $0 + $1.price }
+        recepit.totalPrice = totalPrice
+        if self.receiptItems.isEmpty || totalPrice == 0 {
+            return
+        }
+        recepit.date = date
+        for index in 0...self.receiptItems.count - 1 {
+            self.receiptItems[index].date = date
+        }
         PersistenceController.shared.insertReceipt(receipt: recepit){ success in
             if success {
                 // sucess
@@ -27,6 +37,8 @@ struct SummaryView: View {
                 PersistenceController.shared.insertReceiptItems(items: receiptItems) { success in
                     if success {
                        // sucess
+                        let all = PersistenceController.shared.fetchReceiptItems(for: recepit.recepitId)
+                        print(all)
                         print("receiptItems save sucess")
                         dismiss()
                         onSubmit?()

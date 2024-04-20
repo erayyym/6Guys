@@ -318,6 +318,30 @@ class PersistenceController {
            return receipts.reduce(0.0) { $0 + $1.totalPrice }
        }
     
+    func fetchMostRecentReceiptDate(completion: @escaping (Date?) -> Void) {
+                let query = "SELECT MAX(date) FROM Receipts;"
+
+                var mostRecentDate: Date? = nil
+                var statement: OpaquePointer?
+
+                if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK {
+                    if sqlite3_step(statement) == SQLITE_ROW {
+                        if let dateString = sqlite3_column_text(statement, 0) {
+                            let dateStr = String(cString: dateString)
+                            mostRecentDate = dateFormatter.date(from: dateStr)
+                        }
+                    } else {
+                        print("No rows found or error fetching the most recent date.")
+                    }
+                    sqlite3_finalize(statement)
+                } else {
+                    let errorMessage = String(cString: sqlite3_errmsg(db))
+                    print("Error preparing the query: \(errorMessage)")
+                }
+
+                completion(mostRecentDate)
+            }
+    
     func fetchMonthlyReports(for dateString: String) -> [MonthlyReport] {
         let query = """
             SELECT strftime('%Y-%m', date) AS month, category, SUM(price) AS total

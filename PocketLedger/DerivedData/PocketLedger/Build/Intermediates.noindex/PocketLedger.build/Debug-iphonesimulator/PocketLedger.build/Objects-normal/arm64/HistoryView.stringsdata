@@ -1,0 +1,16 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/HistoryView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Recepits"
+      },
+      {
+        "comment": "",
+        "key": "%@"
+      }
+    ]
+  },
+  "version": 1
+}

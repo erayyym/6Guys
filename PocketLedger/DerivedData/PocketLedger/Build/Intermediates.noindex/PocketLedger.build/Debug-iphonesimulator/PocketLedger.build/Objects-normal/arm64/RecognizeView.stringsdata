@@ -1,0 +1,24 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/RecognizeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Scan"
+      },
+      {
+        "comment": "",
+        "key": "Choose Source"
+      },
+      {
+        "comment": "",
+        "key": "Camera"
+      },
+      {
+        "comment": "",
+        "key": "Photo Library"
+      }
+    ]
+  },
+  "version": 1
+}

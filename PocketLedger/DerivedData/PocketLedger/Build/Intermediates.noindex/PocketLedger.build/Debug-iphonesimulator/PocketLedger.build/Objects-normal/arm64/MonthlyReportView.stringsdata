@@ -4,6 +4,14 @@
     "Localizable": [
       {
         "comment": "",
+        "key": "Month: %@"
+      },
+      {
+        "comment": "",
+        "key": "No data available"
+      },
+      {
+        "comment": "",
         "key": "Select Date"
       }
     ]

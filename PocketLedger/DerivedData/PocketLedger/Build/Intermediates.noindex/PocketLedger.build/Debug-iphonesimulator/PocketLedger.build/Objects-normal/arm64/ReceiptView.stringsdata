@@ -1,0 +1,28 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ReceiptView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Recepit detail"
+      },
+      {
+        "comment": "",
+        "key": "No items found."
+      },
+      {
+        "comment": "",
+        "key": "Name"
+      },
+      {
+        "comment": "",
+        "key": "Cost"
+      },
+      {
+        "comment": "",
+        "key": "$"
+      }
+    ]
+  },
+  "version": 1
+}

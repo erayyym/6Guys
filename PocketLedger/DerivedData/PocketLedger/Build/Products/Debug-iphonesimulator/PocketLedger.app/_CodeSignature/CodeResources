@@ -6,7 +6,39 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		zr3Z5528RoJX+OM6UFH3i5sdHWs=
+		/GNh3VUF2qdL2fw5/TVcA8Nh1n4=
+		</data>
+		<key>MobileNetV2.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		WzPdyUsyt7oUK9ZVHyab9EfYiwE=
+		</data>
+		<key>MobileNetV2.mlmodelc/coremldata.bin</key>
+		<data>
+		g32lUCzKKZxr69oBeCDjH2gU0+4=
+		</data>
+		<key>MobileNetV2.mlmodelc/metadata.json</key>
+		<data>
+		GC5Ir6wYSYBRi1L80JQJHYsFNG0=
+		</data>
+		<key>MobileNetV2.mlmodelc/model.espresso.net</key>
+		<data>
+		aKIc5oouf7QRSlIOsV3GYOQ4Qoo=
+		</data>
+		<key>MobileNetV2.mlmodelc/model.espresso.shape</key>
+		<data>
+		uZxk3BBleXh+xszzpBoP1x0mqO8=
+		</data>
+		<key>MobileNetV2.mlmodelc/model.espresso.weights</key>
+		<data>
+		NwHIGGKfdRkjltiB5wlhyy1fvhU=
+		</data>
+		<key>MobileNetV2.mlmodelc/model/coremldata.bin</key>
+		<data>
+		AyvVi5cUgezTYZFS+H0JNPDYKgA=
+		</data>
+		<key>MobileNetV2.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<data>
+		uA3l0Th1hUHF8FJlrRRKufqG0ds=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -14,7 +46,64 @@
 		</data>
 	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>MobileNetV2.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5q4ePglWx6XUWGzlqkVBGXusQ8EJUnFVgeUsFhXw9lM=
+			</data>
+		</dict>
+		<key>MobileNetV2.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eajWelJ62nvxteZCedMpLJQZt1QIUGY6RECkhRxzLIQ=
+			</data>
+		</dict>
+		<key>MobileNetV2.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NzGdcBHRKMJSUXnwCg3KWpTrLHWCKEBBZ8/NWv7qyss=
+			</data>
+		</dict>
+		<key>MobileNetV2.mlmodelc/model.espresso.net</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yz/4hbq2mhc4mEkXRXMsAR5dpmt7UH2ttPP6I9wmwk4=
+			</data>
+		</dict>
+		<key>MobileNetV2.mlmodelc/model.espresso.shape</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zMM+e8rpP0QvvCVsjvadRxLFJVqA4Fq8o7bIxLcrQJk=
+			</data>
+		</dict>
+		<key>MobileNetV2.mlmodelc/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wHD64wuSsAgFsWtUhZmh/2ApeNcS0DrouQPokiiABag=
+			</data>
+		</dict>
+		<key>MobileNetV2.mlmodelc/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CJPCiEp21Qvpv+Xxrb6up2khi9N7a6oBM7aTqzbcKdg=
+			</data>
+		</dict>
+		<key>MobileNetV2.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LDTOHfI7g4xavyp/ZDfMo9MGftUJ/yXxHfaxG1grUes=
+			</data>
+		</dict>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^.*</key>

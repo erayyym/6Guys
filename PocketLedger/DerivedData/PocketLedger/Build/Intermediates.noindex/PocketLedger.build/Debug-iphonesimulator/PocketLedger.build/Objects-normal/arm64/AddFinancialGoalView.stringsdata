@@ -1,0 +1,36 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/FinancialGoals/AddFinancialGoalView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Add Financial Goal"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Set Goal"
+      },
+      {
+        "comment": "",
+        "key": "Goal"
+      },
+      {
+        "comment": "",
+        "key": "Amount"
+      },
+      {
+        "comment": "",
+        "key": "Due Date"
+      },
+      {
+        "comment": "",
+        "key": "Submit"
+      }
+    ]
+  },
+  "version": 1
+}

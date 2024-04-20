@@ -8,10 +8,6 @@
       },
       {
         "comment": "",
-        "key": "No items found."
-      },
-      {
-        "comment": "",
         "key": "Scan Receipt"
       },
       {
@@ -28,11 +24,19 @@
       },
       {
         "comment": "",
+        "key": "No items found."
+      },
+      {
+        "comment": "",
         "key": "Name"
       },
       {
         "comment": "",
         "key": "Cost"
+      },
+      {
+        "comment": "",
+        "key": "Tap name field, then tap annotation to select current row input value."
       },
       {
         "comment": "",
