@@ -49,10 +49,10 @@ struct SummaryView: View {
         } else {
             recepit.recepitId = newReceiptId
             print("也是直接给他submit修好了好吧老底")
-            //            for index in receiptItems.indices {
-            //                // Assign a new UUID to each receipt item to ensure it is unique
-            //                receiptItems[index].receiptId = recepit.receiptId
-            //            }
+            for index in receiptItems.indices {
+                // Assign a new UUID to each receipt item to ensure it is unique
+                receiptItems[index].recepitId = recepit.recepitId
+            }
             
             PersistenceController.shared.insertReceipt(receipt: recepit){ success in
                 if success {

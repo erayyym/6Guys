@@ -1,0 +1,12 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/FinancialGoals/FinancialGoalRowView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Due: %@"
+      }
+    ]
+  },
+  "version": 1
+}

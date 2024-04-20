@@ -1,0 +1,40 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/MainView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Lets start budgetting!"
+      },
+      {
+        "comment": "",
+        "key": "You've been keeping your budgetting! Nice job!!"
+      },
+      {
+        "comment": "",
+        "key": "You have not done budgeting in %lld days."
+      },
+      {
+        "comment": "",
+        "key": "PocketLedger"
+      },
+      {
+        "comment": "",
+        "key": "Month Report"
+      },
+      {
+        "comment": "",
+        "key": "Financial goals"
+      },
+      {
+        "comment": "",
+        "key": "Scan"
+      },
+      {
+        "comment": "",
+        "key": "Receipts"
+      }
+    ]
+  },
+  "version": 1
+}

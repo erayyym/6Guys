@@ -1,0 +1,20 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/MonthlyReportView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Month: %@"
+      },
+      {
+        "comment": "",
+        "key": "No data available"
+      },
+      {
+        "comment": "",
+        "key": "Select Date"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,52 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ScanView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Scan"
+      },
+      {
+        "comment": "",
+        "key": "Scan Receipt"
+      },
+      {
+        "comment": "",
+        "key": "Choose Source"
+      },
+      {
+        "comment": "",
+        "key": "Camera"
+      },
+      {
+        "comment": "",
+        "key": "Photo Library"
+      },
+      {
+        "comment": "",
+        "key": "No items found."
+      },
+      {
+        "comment": "",
+        "key": "Name"
+      },
+      {
+        "comment": "",
+        "key": "Cost"
+      },
+      {
+        "comment": "",
+        "key": "Tap name field, then tap annotation to select current row input value."
+      },
+      {
+        "comment": "",
+        "key": "$"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      }
+    ]
+  },
+  "version": 1
+}
