@@ -36,7 +36,7 @@ class PersistenceController {
       """
     
     private let createFinancialTableQuery = """
-        CREATE TABLE Goals (
+        CREATE TABLE IF NOT EXISTS Goals (
             id TEXT PRIMARY KEY,
             goal TEXT,
             amount REAL,
