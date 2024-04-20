@@ -4,6 +4,18 @@
     "Localizable": [
       {
         "comment": "",
+        "key": "Lets start budgetting!"
+      },
+      {
+        "comment": "",
+        "key": "You've been keeping your budgetting! Nice job!!"
+      },
+      {
+        "comment": "",
+        "key": "You have not done budgeting in %lld days."
+      },
+      {
+        "comment": "",
         "key": "PocketLedger"
       },
       {

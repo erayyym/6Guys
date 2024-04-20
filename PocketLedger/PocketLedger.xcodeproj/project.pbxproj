@@ -413,6 +413,7 @@
 				DEVELOPMENT_TEAM = TL3TF782MY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketLedger/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = abababab;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "access to microphone";
@@ -449,6 +450,7 @@
 				DEVELOPMENT_TEAM = TL3TF782MY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketLedger/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = abababab;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "access to microphone";

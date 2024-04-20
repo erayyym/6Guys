@@ -525,6 +525,26 @@ class PersistenceController {
             completion(goals)
         }
     
+    func hasAnyGoals(completion: @escaping (Bool) -> Void) {
+        let query = "SELECT EXISTS(SELECT 1 FROM Goals);"
+        
+        var statement: OpaquePointer?
+        if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK {
+            if sqlite3_step(statement) == SQLITE_ROW {
+                let exists = sqlite3_column_int(statement, 0) != 0
+                completion(exists)
+            } else {
+                print("Error checking for goals")
+                completion(false)
+            }
+            sqlite3_finalize(statement)
+        } else {
+            print("Error preparing query")
+            completion(false)
+        }
+    }
+
+    
     func updateGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
         let query = """
                     UPDATE Goals
