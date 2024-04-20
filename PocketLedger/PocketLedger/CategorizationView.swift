@@ -48,7 +48,11 @@ struct SummaryView: View {
             return
         } else {
             recepit.recepitId = newReceiptId
+<<<<<<< Updated upstream
             print("也是直接给他submit修好了好吧老底")
+=======
+
+>>>>>>> Stashed changes
             for index in receiptItems.indices {
                 // Assign a new UUID to each receipt item to ensure it is unique
                 receiptItems[index].recepitId = recepit.recepitId
