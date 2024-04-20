@@ -60,18 +60,18 @@ struct SummaryView: View {
         
     }
     
-    
-    @State private var items: [SummaryItem] = [
-        SummaryItem(merchant: "Pickled Cabbage", money: "24.99", category: "Food"),
-        SummaryItem(merchant: "Ribs and Frozen Tofu", money: "10.99", category: "Food"),
-        SummaryItem(merchant: "Wings", money: "10.99", category: "Food"),
-        SummaryItem(merchant: "Earphones", money: "0.99", category: "Drink")
-    ]
-
-    // Add more categories as needed
-    let categories = [
-        "Food", "Drink", "utilities", "Tuition"
-    ]
+//    
+//    @State private var items: [SummaryItem] = [
+//        SummaryItem(merchant: "Pickled Cabbage", money: "24.99", category: "Food"),
+//        SummaryItem(merchant: "Ribs and Frozen Tofu", money: "10.99", category: "Food"),
+//        SummaryItem(merchant: "Wings", money: "10.99", category: "Food"),
+//        SummaryItem(merchant: "Earphones", money: "0.99", category: "Drink")
+//    ]
+//
+//    // Add more categories as needed
+//    let categories = [
+//        "Food", "Drink", "utilities", "Tuition"
+//    ]
 
     
     var body: some View {

@@ -636,6 +636,48 @@
 			<key>uniqueIdentifier</key>
 			<string>D6075190-596D-4C2C-A55A-C2A0D67AD156</string>
 		</dict>
+		<key>FA40A826-F46A-4D73-959D-BB63260E4A60</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FA40A826-F46A-4D73-959D-BB63260E4A60.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>8</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PocketLedger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PocketLedger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PocketLedger</string>
+			<key>timeStartedRecording</key>
+			<real>735275949.86215699</real>
+			<key>timeStoppedRecording</key>
+			<real>735275950.014202</real>
+			<key>title</key>
+			<string>Build PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>FA40A826-F46A-4D73-959D-BB63260E4A60</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
