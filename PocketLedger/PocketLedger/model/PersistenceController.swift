@@ -36,13 +36,17 @@ class PersistenceController {
       """
     
     private let createFinancialTableQuery = """
-        CREATE TABLE IF NOT EXISTS Goals (
+        CREATE TABLE Goals (
             id TEXT PRIMARY KEY,
             goal TEXT,
             amount REAL,
             date TEXT,
             createDate TEXT,
-            achieved INTEGER
+            achieved INTEGER,
+            percent REAL,
+            goalType TEXT,
+            comparedPercent REAL,
+            frequency REAL
         );
     """
     
@@ -68,7 +72,9 @@ class PersistenceController {
         if executeQuery(query: createFinancialTableQuery) {
             print("Financial table created successfully")
         } else {
-            print("Error creating Financial table")
+//            executeQuery(query: "Drop table Goals;")
+//            executeQuery(query: createFinancialTableQuery)
+            print("Error creating Financial Goals table")
         }
     }
     
@@ -490,6 +496,9 @@ class PersistenceController {
 //    }
     
     func insertGoal(goal: GoalModel, completion: @escaping (Bool) -> Void) {
+        let query2 = "SELECT amount FROM Goals;"
+        let rows = fetchQuery(query: query2)
+        print(rows)
         let query = """
             INSERT INTO Goals (id, goal, amount, date, createDate, achieved, percent, goalType, comparedPercent, frequency)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);

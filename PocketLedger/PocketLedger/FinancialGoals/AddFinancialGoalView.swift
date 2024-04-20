@@ -75,7 +75,7 @@ struct AddFinancialGoalView: View {
                     DatePicker("Due Date", selection: $selectedDate, displayedComponents: .date)
                 }
             } else if goalType == "Percent" {
-                Section(header: Text("Set Goal (How much money you want to save compare last month?)")) {
+                Section(header: Text("Set Goal (How much money (%) you want to save compared to last month?)")) {
                     TextField("Percent", text: $percent)
                         .keyboardType(.decimalPad)
                 }
