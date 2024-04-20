@@ -181,7 +181,7 @@ class PersistenceController {
         
         for item in items {
             success = executeQueryWithParams(query: query, params: [item.recepitId, item.name, item.category, item.price])
-            
+//            print(item)
             if !success {
                 break
             }

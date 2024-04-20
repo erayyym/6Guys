@@ -206,8 +206,14 @@ struct ScanView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    let newItem = RecepitItem(name: "", price: 0.0)
-                    receiptItems.append(newItem)
+//                    let newItem = RecepitItem(name: "", price: 0.0)
+                    var item = RecepitItem()
+                    item.date = recepit.date
+//                    print(recepit.recepitId)
+//                    print("232323")
+                    item.recepitId = recepit.recepitId
+                    
+                    receiptItems.append(item)
                     
                 }) {
                     Image(systemName: "plus.circle")

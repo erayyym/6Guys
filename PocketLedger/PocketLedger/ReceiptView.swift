@@ -9,12 +9,16 @@ import Foundation
 import SwiftUI
 
 struct ReceiptView: View {
+    @State private var receiptItems: [RecepitItem] = []
+
     var receipt: Recepit {
         didSet {
             receiptItems = PersistenceController.shared.fetchReceiptItems(for: receipt.recepitId)
+            print("ndc到此一游")
+//            print(receiptItems)
         }
     }
-    @State private var receiptItems: [RecepitItem] = []
+
 
     @State var image: UIImage?
     
@@ -84,6 +88,8 @@ struct ReceiptView: View {
         
         .onAppear() {
             receiptItems = PersistenceController.shared.fetchReceiptItems(for: receipt.recepitId)
+//            print(receipt.recepitId)
+//            print(receiptItems)
         }
         
     }
