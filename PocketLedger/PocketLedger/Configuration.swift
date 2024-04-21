@@ -9,6 +9,6 @@ import Foundation
 
 let OpenAIKey = "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"
 let categories = [
-    "Food", "Drink", "utilities"
+    "Food", "Drink", "utilities, Others"
 ]
 let goalType = ["Fixed", "Percent", "Frequency"]

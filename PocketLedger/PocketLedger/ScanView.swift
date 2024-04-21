@@ -334,7 +334,7 @@ struct ScanView: View {
             let name = receiptItems.map{$0.name}
             let namestr = name.joined(separator: ",")
             print(namestr)
-            let questionstr = "Please categorize the following items separated by commas: \(namestr), according to following categories: \(categories.joined(separator: ", ")), just output the types in order separated by comma, without outputting any other information. For example: input(apple, book, banan) output(food, utilities, food)"
+            let questionstr = "Please categorize the following items separated by commas: \(namestr), according to following categories: \(categories.joined(separator: ", ")), just output the types in order separated by comma, without outputting any other information. For example: input(apple, book, banan) output(food, utilities, drink, others)"
 
             print(questionstr)
             let gGe = OpenAI()

@@ -117,12 +117,12 @@ struct MonthlyReportView: View {
     }
     
     private func generateRepotAnalyse(data: String, completion: @escaping (String) -> Void) {
-        let question = "Input: \(data), Objective: Predict next month's expenditure amount (provide number), and generate a brief analysis statement on the spending trend on each category, including which category of expenditure is the highest, which category is the lowest, and the prediction for next month's expenditure. Please output a brief analysis report directly.No need for analysis process."
+        let question = "Input: \(data), Objective: Predict next month's expenditure amount (provide number), and generate a brief analysis statement on the spending trend on each category, including which category of expenditure is the highest, which category is the lowest, and the prediction for next month's expenditure. Please output a 50 words analysis report directly.Be concise!!."
         
         let openAI = OpenAI()
         openAI.ask(question: question) { (answer) in
             if let answer = answer {
-                print(answer)
+                print("ddd",answer)
 
                 completion(answer)
             } else {
