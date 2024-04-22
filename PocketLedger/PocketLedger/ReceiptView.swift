@@ -14,7 +14,7 @@ struct ReceiptView: View {
     var receipt: Recepit {
         didSet {
             receiptItems = PersistenceController.shared.fetchReceiptItems(for: receipt.recepitId)
-            print("ndc到此一游")
+
 //            print(receiptItems)
         }
     }
