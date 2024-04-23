@@ -11,7 +11,7 @@
 
 [video]: https://youtu.be/p6svls3ul90
 [wiki]: https://github.com/erayyym/6Guys/wiki
-[agile]: https://trello.com/b/oK1bLRzt/6guys <!-- MUST be made public –>
+[agile]: https://trello.com/b/oK1bLRzt/6guys <!-- MUST be made public -->
 
 
 
