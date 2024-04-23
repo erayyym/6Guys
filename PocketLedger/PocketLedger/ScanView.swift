@@ -300,7 +300,7 @@ struct ScanView: View {
 //        print("Image successfully converted to PNG.")
 //        return pngImage
 //    }
-
+// This the the function to standalize the image's resolution
     func resizeImage(_ image: UIImage, targetSize: CGSize) -> UIImage? {
         let size = image.size
 
