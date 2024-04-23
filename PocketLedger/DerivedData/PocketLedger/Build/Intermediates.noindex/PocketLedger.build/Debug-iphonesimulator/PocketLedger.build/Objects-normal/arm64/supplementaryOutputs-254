@@ -1,0 +1,18 @@
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/AnnotationView.swift":
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/AnnotationView.swiftdeps"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/AnnotationView.dia"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/AnnotationView.swiftconstvalues"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/AnnotationView.o"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/AnnotationView.d"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/VNClassificationObservation+confidenceString.swift":
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/VNClassificationObservation+confidenceString.swiftconstvalues"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/VNClassificationObservation+confidenceString.d"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/VNClassificationObservation+confidenceString.dia"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/VNClassificationObservation+confidenceString.o"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/VNClassificationObservation+confidenceString.swiftdeps"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/UIImage+Extension.swift":
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/UIImage+Extension.o"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/UIImage+Extension.d"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/UIImage+Extension.swiftconstvalues"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/UIImage+Extension.dia"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/UIImage+Extension.swiftdeps"

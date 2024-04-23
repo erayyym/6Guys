@@ -1,0 +1,28 @@
+{
+  "source": "/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/FinancialGoals/FinancialPercentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Add Financial Percent"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Set Percent"
+      },
+      {
+        "comment": "",
+        "key": "Percent"
+      },
+      {
+        "comment": "",
+        "key": "Submit"
+      }
+    ]
+  },
+  "version": 1
+}

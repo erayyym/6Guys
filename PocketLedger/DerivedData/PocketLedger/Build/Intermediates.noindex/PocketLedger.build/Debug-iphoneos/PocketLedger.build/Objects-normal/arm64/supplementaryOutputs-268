@@ -1,0 +1,18 @@
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/model/ReceiptModels.swift":
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptModels.d"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptModels.o"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptModels.swiftdeps"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptModels.swiftconstvalues"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptModels.dia"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/FinancialGoals/FinancialGoalRowView.swift":
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/FinancialGoalRowView.o"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/FinancialGoalRowView.swiftconstvalues"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/FinancialGoalRowView.swiftdeps"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/FinancialGoalRowView.dia"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/FinancialGoalRowView.d"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/Configuration.swift":
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/Configuration.o"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/Configuration.swiftdeps"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/Configuration.dia"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/Configuration.swiftconstvalues"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/Configuration.d"

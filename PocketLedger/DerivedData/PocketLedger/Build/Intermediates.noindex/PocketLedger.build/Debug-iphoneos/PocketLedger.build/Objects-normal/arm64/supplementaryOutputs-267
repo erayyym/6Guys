@@ -1,0 +1,18 @@
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ImagePicker.swift":
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImagePicker.dia"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImagePicker.swiftconstvalues"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImagePicker.swiftdeps"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImagePicker.o"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImagePicker.d"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/CategorizationView.swift":
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/CategorizationView.swiftconstvalues"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/CategorizationView.d"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/CategorizationView.dia"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/CategorizationView.swiftdeps"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/CategorizationView.o"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ReceiptView.swift":
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptView.swiftconstvalues"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptView.d"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptView.dia"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptView.o"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptView.swiftdeps"

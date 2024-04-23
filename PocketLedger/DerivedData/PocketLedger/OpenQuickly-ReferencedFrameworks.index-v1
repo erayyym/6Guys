@@ -5,12 +5,12 @@
 	<string>ImageIO</string>
 	<string>SwiftUI</string>
 	<string>Vision</string>
-	<string>Speech</string>
 	<string>CoreML</string>
+	<string>Speech</string>
 	<string>SQLite3</string>
 	<string>AVKit</string>
-	<string>Combine</string>
 	<string>UIKit</string>
+	<string>Combine</string>
 	<string>Foundation</string>
 </array>
 </plist>

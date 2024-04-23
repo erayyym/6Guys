@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0C4C85C1-BEE7-4E28-A8B8-09DBB32BC423</key>
+		<key>16D87C5E-7B7A-49E8-900E-5CE17204ACB3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,595 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0C4C85C1-BEE7-4E28-A8B8-09DBB32BC423.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735290946.543226</real>
-			<key>timeStoppedRecording</key>
-			<real>735290948.03026903</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>0C4C85C1-BEE7-4E28-A8B8-09DBB32BC423</string>
-		</dict>
-		<key>129E74C0-9AD3-4C85-BFA4-71AF9DC79A1E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>129E74C0-9AD3-4C85-BFA4-71AF9DC79A1E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>6</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735283242.61003399</real>
-			<key>timeStoppedRecording</key>
-			<real>735283243.78769302</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>129E74C0-9AD3-4C85-BFA4-71AF9DC79A1E</string>
-		</dict>
-		<key>1498EDE0-D19F-4A58-8FC5-53C0BB5D8E23</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1498EDE0-D19F-4A58-8FC5-53C0BB5D8E23.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735286670.66465199</real>
-			<key>timeStoppedRecording</key>
-			<real>735286671.61325097</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>1498EDE0-D19F-4A58-8FC5-53C0BB5D8E23</string>
-		</dict>
-		<key>2B6D5AB1-19D2-412B-8999-C169A2BEE38F</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2B6D5AB1-19D2-412B-8999-C169A2BEE38F.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735286973.03119195</real>
-			<key>timeStoppedRecording</key>
-			<real>735286973.23826003</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>2B6D5AB1-19D2-412B-8999-C169A2BEE38F</string>
-		</dict>
-		<key>3D17D374-23EA-4A7C-8EA1-6BB5A78C06E3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>3D17D374-23EA-4A7C-8EA1-6BB5A78C06E3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735284002.16577697</real>
-			<key>timeStoppedRecording</key>
-			<real>735284002.29774702</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>3D17D374-23EA-4A7C-8EA1-6BB5A78C06E3</string>
-		</dict>
-		<key>3F48F42E-8F2E-4080-95F0-46044F151C69</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>3F48F42E-8F2E-4080-95F0-46044F151C69.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>5</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735282964.81448102</real>
-			<key>timeStoppedRecording</key>
-			<real>735282965.99481201</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>3F48F42E-8F2E-4080-95F0-46044F151C69</string>
-		</dict>
-		<key>40E039BF-8BEA-49EC-BDB2-20C28AA3F932</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>40E039BF-8BEA-49EC-BDB2-20C28AA3F932.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>5</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735282573.98173201</real>
-			<key>timeStoppedRecording</key>
-			<real>735282575.11462796</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>40E039BF-8BEA-49EC-BDB2-20C28AA3F932</string>
-		</dict>
-		<key>4C7E0520-ABC5-4341-8201-4093E073FAA1</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4C7E0520-ABC5-4341-8201-4093E073FAA1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735289849.73340404</real>
-			<key>timeStoppedRecording</key>
-			<real>735289850.58483696</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>4C7E0520-ABC5-4341-8201-4093E073FAA1</string>
-		</dict>
-		<key>4FADB591-6CBF-406B-9E30-D3EFAD3903FE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4FADB591-6CBF-406B-9E30-D3EFAD3903FE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735289445.41757905</real>
-			<key>timeStoppedRecording</key>
-			<real>735289446.59906495</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>4FADB591-6CBF-406B-9E30-D3EFAD3903FE</string>
-		</dict>
-		<key>5A47EE48-1238-49B3-B100-7326D96D92DB</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5A47EE48-1238-49B3-B100-7326D96D92DB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>6</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735282247.83677006</real>
-			<key>timeStoppedRecording</key>
-			<real>735282250.64027798</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>5A47EE48-1238-49B3-B100-7326D96D92DB</string>
-		</dict>
-		<key>5C296EF3-D143-4AAE-B9FB-FAE9601707FF</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5C296EF3-D143-4AAE-B9FB-FAE9601707FF.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735284705.06516898</real>
-			<key>timeStoppedRecording</key>
-			<real>735284706.15612996</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>5C296EF3-D143-4AAE-B9FB-FAE9601707FF</string>
-		</dict>
-		<key>61C49654-99D6-420A-9B1C-8683CF141D31</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>61C49654-99D6-420A-9B1C-8683CF141D31.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>9</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735287240.55886698</real>
-			<key>timeStoppedRecording</key>
-			<real>735287240.61266601</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>61C49654-99D6-420A-9B1C-8683CF141D31</string>
-		</dict>
-		<key>637CF34C-76F0-43C5-BE81-F5CF8C8803C8</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>637CF34C-76F0-43C5-BE81-F5CF8C8803C8.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735290070.91731298</real>
-			<key>timeStoppedRecording</key>
-			<real>735290071.66367495</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>637CF34C-76F0-43C5-BE81-F5CF8C8803C8</string>
-		</dict>
-		<key>64AC2E28-63BC-45C8-A685-EC31A369B90A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>64AC2E28-63BC-45C8-A685-EC31A369B90A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735284824.43160498</real>
-			<key>timeStoppedRecording</key>
-			<real>735284825.50285494</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>64AC2E28-63BC-45C8-A685-EC31A369B90A</string>
-		</dict>
-		<key>74B94B64-F84A-4B87-BD81-11DBD77F977B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>74B94B64-F84A-4B87-BD81-11DBD77F977B.xcactivitylog</string>
+			<string>16D87C5E-7B7A-49E8-900E-5CE17204ACB3.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -628,15 +40,15 @@
 			<key>signature</key>
 			<string>Build PocketLedger</string>
 			<key>timeStartedRecording</key>
-			<real>735286630.49018204</real>
+			<real>735577555.85328102</real>
 			<key>timeStoppedRecording</key>
-			<real>735286630.67384195</real>
+			<real>735577557.40198696</real>
 			<key>title</key>
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
-			<string>74B94B64-F84A-4B87-BD81-11DBD77F977B</string>
+			<string>16D87C5E-7B7A-49E8-900E-5CE17204ACB3</string>
 		</dict>
-		<key>77C14D24-6042-4466-81D9-095D33775AC6</key>
+		<key>5CFB4F35-5860-4230-9076-3FD0DB0E4A2F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -645,49 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>77C14D24-6042-4466-81D9-095D33775AC6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735287016.16746402</real>
-			<key>timeStoppedRecording</key>
-			<real>735287017.83192301</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>77C14D24-6042-4466-81D9-095D33775AC6</string>
-		</dict>
-		<key>7E0B2060-B2DD-42AE-A1B6-565BC4C2E381</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7E0B2060-B2DD-42AE-A1B6-565BC4C2E381.xcactivitylog</string>
+			<string>5CFB4F35-5860-4230-9076-3FD0DB0E4A2F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -701,7 +71,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
+				<integer>9</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>PocketLedger project</string>
@@ -712,15 +82,15 @@
 			<key>signature</key>
 			<string>Build PocketLedger</string>
 			<key>timeStartedRecording</key>
-			<real>735290570.86554003</real>
+			<real>735582731.05279005</real>
 			<key>timeStoppedRecording</key>
-			<real>735290570.94266403</real>
+			<real>735582732.77851999</real>
 			<key>title</key>
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
-			<string>7E0B2060-B2DD-42AE-A1B6-565BC4C2E381</string>
+			<string>5CFB4F35-5860-4230-9076-3FD0DB0E4A2F</string>
 		</dict>
-		<key>8B461DA9-498F-4267-8EA3-0A313B34B51D</key>
+		<key>867C9ABF-EB99-40E6-888A-26EED98C25AB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -729,7 +99,91 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>8B461DA9-498F-4267-8EA3-0A313B34B51D.xcactivitylog</string>
+			<string>867C9ABF-EB99-40E6-888A-26EED98C25AB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>9</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PocketLedger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PocketLedger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PocketLedger</string>
+			<key>timeStartedRecording</key>
+			<real>735582747.75670898</real>
+			<key>timeStoppedRecording</key>
+			<real>735582747.90736604</real>
+			<key>title</key>
+			<string>Build PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>867C9ABF-EB99-40E6-888A-26EED98C25AB</string>
+		</dict>
+		<key>9047242A-B023-456A-94FC-51431D065D95</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9047242A-B023-456A-94FC-51431D065D95.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>9</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PocketLedger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PocketLedger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PocketLedger</string>
+			<key>timeStartedRecording</key>
+			<real>735582763.12149894</real>
+			<key>timeStoppedRecording</key>
+			<real>735582763.18189597</real>
+			<key>title</key>
+			<string>Build PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>9047242A-B023-456A-94FC-51431D065D95</string>
+		</dict>
+		<key>AAE7F138-F947-430D-A3A1-18F5D1AE9022</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AAE7F138-F947-430D-A3A1-18F5D1AE9022.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -754,15 +208,15 @@
 			<key>signature</key>
 			<string>Build PocketLedger</string>
 			<key>timeStartedRecording</key>
-			<real>735284483.89072096</real>
+			<real>735577544.94895506</real>
 			<key>timeStoppedRecording</key>
-			<real>735284485.54024601</real>
+			<real>735577555.56013405</real>
 			<key>title</key>
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
-			<string>8B461DA9-498F-4267-8EA3-0A313B34B51D</string>
+			<string>AAE7F138-F947-430D-A3A1-18F5D1AE9022</string>
 		</dict>
-		<key>922F5E1B-0549-47F8-9293-C0CE7783AAFA</key>
+		<key>AAF532E0-03B9-438D-A407-DFF33B7EA3E9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -771,343 +225,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>922F5E1B-0549-47F8-9293-C0CE7783AAFA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735283486.74681103</real>
-			<key>timeStoppedRecording</key>
-			<real>735283487.412166</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>922F5E1B-0549-47F8-9293-C0CE7783AAFA</string>
-		</dict>
-		<key>96886254-6F0C-4E13-AFC0-DD93FB94030E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>96886254-6F0C-4E13-AFC0-DD93FB94030E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735283646.80708003</real>
-			<key>timeStoppedRecording</key>
-			<real>735283647.97824705</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>96886254-6F0C-4E13-AFC0-DD93FB94030E</string>
-		</dict>
-		<key>A04CDCFF-F2F0-4995-B083-BBE4769F4E7D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A04CDCFF-F2F0-4995-B083-BBE4769F4E7D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735289974.95917404</real>
-			<key>timeStoppedRecording</key>
-			<real>735289975.87817597</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>A04CDCFF-F2F0-4995-B083-BBE4769F4E7D</string>
-		</dict>
-		<key>A308C953-98E8-4717-9616-45EF0A840574</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A308C953-98E8-4717-9616-45EF0A840574.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735285812.09292698</real>
-			<key>timeStoppedRecording</key>
-			<real>735285813.29432595</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>A308C953-98E8-4717-9616-45EF0A840574</string>
-		</dict>
-		<key>A5696605-BDEC-4009-98C1-D02D8F6C4ED0</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A5696605-BDEC-4009-98C1-D02D8F6C4ED0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735283463.50347698</real>
-			<key>timeStoppedRecording</key>
-			<real>735283464.39431</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>A5696605-BDEC-4009-98C1-D02D8F6C4ED0</string>
-		</dict>
-		<key>AF39C6CB-ADF2-451B-AF86-ECF5879F12C1</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>AF39C6CB-ADF2-451B-AF86-ECF5879F12C1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>5</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735282630.35170805</real>
-			<key>timeStoppedRecording</key>
-			<real>735282630.96552098</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>AF39C6CB-ADF2-451B-AF86-ECF5879F12C1</string>
-		</dict>
-		<key>B4507A5A-BD0C-47AD-ABD0-CA26C89D9818</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B4507A5A-BD0C-47AD-ABD0-CA26C89D9818.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>5</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735282608.08580005</real>
-			<key>timeStoppedRecording</key>
-			<real>735282608.66829598</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>B4507A5A-BD0C-47AD-ABD0-CA26C89D9818</string>
-		</dict>
-		<key>BB80C5AD-D14F-4C42-B244-9530688E4F09</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>BB80C5AD-D14F-4C42-B244-9530688E4F09.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735289515.90150595</real>
-			<key>timeStoppedRecording</key>
-			<real>735289516.72384405</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>BB80C5AD-D14F-4C42-B244-9530688E4F09</string>
-		</dict>
-		<key>D357C13A-3F07-436A-B3A7-0DA4860DC30E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D357C13A-3F07-436A-B3A7-0DA4860DC30E.xcactivitylog</string>
+			<string>AAF532E0-03B9-438D-A407-DFF33B7EA3E9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1132,15 +250,15 @@
 			<key>signature</key>
 			<string>Build PocketLedger</string>
 			<key>timeStartedRecording</key>
-			<real>735341673.93159604</real>
+			<real>735457485.26667202</real>
 			<key>timeStoppedRecording</key>
-			<real>735341676.516554</real>
+			<real>735457487.95449698</real>
 			<key>title</key>
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
-			<string>D357C13A-3F07-436A-B3A7-0DA4860DC30E</string>
+			<string>AAF532E0-03B9-438D-A407-DFF33B7EA3E9</string>
 		</dict>
-		<key>E36B1A5F-16B5-46D5-874A-183CED41ED7A</key>
+		<key>AF133296-54E7-4C53-88B8-9035B281AAE7</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1149,7 +267,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E36B1A5F-16B5-46D5-874A-183CED41ED7A.xcactivitylog</string>
+			<string>AF133296-54E7-4C53-88B8-9035B281AAE7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1163,7 +281,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
+				<integer>8</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>PocketLedger project</string>
@@ -1174,15 +292,15 @@
 			<key>signature</key>
 			<string>Build PocketLedger</string>
 			<key>timeStartedRecording</key>
-			<real>735285840.92471302</real>
+			<real>735583632.70877504</real>
 			<key>timeStoppedRecording</key>
-			<real>735285841.62069499</real>
+			<real>735583634.53406501</real>
 			<key>title</key>
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
-			<string>E36B1A5F-16B5-46D5-874A-183CED41ED7A</string>
+			<string>AF133296-54E7-4C53-88B8-9035B281AAE7</string>
 		</dict>
-		<key>E3A005B1-9AC4-4C36-A3AF-DF1F6A30FCB3</key>
+		<key>E617076F-7DCD-4F33-9E2B-8C240624C1C5</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1191,7 +309,91 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E3A005B1-9AC4-4C36-A3AF-DF1F6A30FCB3.xcactivitylog</string>
+			<string>E617076F-7DCD-4F33-9E2B-8C240624C1C5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>8</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PocketLedger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PocketLedger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PocketLedger</string>
+			<key>timeStartedRecording</key>
+			<real>735583996.82655203</real>
+			<key>timeStoppedRecording</key>
+			<real>735583998.02056801</real>
+			<key>title</key>
+			<string>Build PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>E617076F-7DCD-4F33-9E2B-8C240624C1C5</string>
+		</dict>
+		<key>E65052B2-41B5-4D85-A96E-13FC0E3580A9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E65052B2-41B5-4D85-A96E-13FC0E3580A9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>8</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PocketLedger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PocketLedger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PocketLedger</string>
+			<key>timeStartedRecording</key>
+			<real>735583760.95773304</real>
+			<key>timeStoppedRecording</key>
+			<real>735583762.14635003</real>
+			<key>title</key>
+			<string>Build PocketLedger</string>
+			<key>uniqueIdentifier</key>
+			<string>E65052B2-41B5-4D85-A96E-13FC0E3580A9</string>
+		</dict>
+		<key>EC7F01C0-39A7-45AA-BB3E-549DD97F3EC8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EC7F01C0-39A7-45AA-BB3E-549DD97F3EC8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1216,15 +418,15 @@
 			<key>signature</key>
 			<string>Build PocketLedger</string>
 			<key>timeStartedRecording</key>
-			<real>735287031.79077697</real>
+			<real>735582751.86719</real>
 			<key>timeStoppedRecording</key>
-			<real>735287036.74725497</real>
+			<real>735582756.72659099</real>
 			<key>title</key>
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
-			<string>E3A005B1-9AC4-4C36-A3AF-DF1F6A30FCB3</string>
+			<string>EC7F01C0-39A7-45AA-BB3E-549DD97F3EC8</string>
 		</dict>
-		<key>E6DF9462-0B19-4F1C-8B4F-9EBC47D426D7</key>
+		<key>F7ADADB6-5F49-45C2-A429-BB742FF7FCC9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1233,7 +435,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E6DF9462-0B19-4F1C-8B4F-9EBC47D426D7.xcactivitylog</string>
+			<string>F7ADADB6-5F49-45C2-A429-BB742FF7FCC9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1258,139 +460,13 @@
 			<key>signature</key>
 			<string>Build PocketLedger</string>
 			<key>timeStartedRecording</key>
-			<real>735286616.52123296</real>
+			<real>735584964.09829402</real>
 			<key>timeStoppedRecording</key>
-			<real>735286617.99963105</real>
+			<real>735584965.91397202</real>
 			<key>title</key>
 			<string>Build PocketLedger</string>
 			<key>uniqueIdentifier</key>
-			<string>E6DF9462-0B19-4F1C-8B4F-9EBC47D426D7</string>
-		</dict>
-		<key>EBA96DDB-8EFF-4FB9-9DC3-E5D2145D1231</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>EBA96DDB-8EFF-4FB9-9DC3-E5D2145D1231.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735281493.58980203</real>
-			<key>timeStoppedRecording</key>
-			<real>735281494.27328205</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>EBA96DDB-8EFF-4FB9-9DC3-E5D2145D1231</string>
-		</dict>
-		<key>FB91D443-4AA6-41C3-BE9E-F87C8914180C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FB91D443-4AA6-41C3-BE9E-F87C8914180C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>7</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735289735.69024301</real>
-			<key>timeStoppedRecording</key>
-			<real>735289736.55714703</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>FB91D443-4AA6-41C3-BE9E-F87C8914180C</string>
-		</dict>
-		<key>FD9E82A5-03C2-457D-A709-DF2F532CF673</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FD9E82A5-03C2-457D-A709-DF2F532CF673.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>PocketLedger project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>PocketLedger</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build PocketLedger</string>
-			<key>timeStartedRecording</key>
-			<real>735286235.87086904</real>
-			<key>timeStoppedRecording</key>
-			<real>735286236.44198298</real>
-			<key>title</key>
-			<string>Build PocketLedger</string>
-			<key>uniqueIdentifier</key>
-			<string>FD9E82A5-03C2-457D-A709-DF2F532CF673</string>
+			<string>F7ADADB6-5F49-45C2-A429-BB742FF7FCC9</string>
 		</dict>
 	</dict>
 </dict>

@@ -10,6 +10,7 @@ import SwiftUI
 import Vision
 import Combine
 import Speech
+import UIKit
 
 struct ScanView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -290,9 +291,53 @@ struct ScanView: View {
         }
     }
     
-    func recognizeText(image: UIImage) {
-        guard let cgImage = image.cgImage else { return }
+//    func convertImageToPNG(image: UIImage) -> UIImage? {
+//        guard let imageData = image.pngData(), let pngImage = UIImage(data: imageData) else {
+//            print("Failed to convert image to PNG.")
+//            return nil
+//        }
+//        print("Image successfully converted to PNG.")
+//        return pngImage
+//    }
+
+    func resizeImage(_ image: UIImage, targetSize: CGSize) -> UIImage? {
+        let size = image.size
+
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
+
+        let scaleFactor = min(widthRatio, heightRatio)
         
+        let scaledImageSize = CGSize(
+            width: size.width * scaleFactor,
+            height: size.height * scaleFactor
+        )
+
+        let renderer = UIGraphicsImageRenderer(size: scaledImageSize)
+        let scaledImage = renderer.image { _ in
+            image.draw(in: CGRect(origin: .zero, size: scaledImageSize))
+        }
+
+        return scaledImage
+    }
+
+    
+    
+    func recognizeText(image: UIImage) {
+            
+//        guard let cgImage = image.cgImage else { return }
+//        guard let pngImage = convertImageToPNG(image: image), let cgImage = pngImage.cgImage else {
+//             print("Failed to prepare image for recognition.")
+//             return
+//         }
+        let standardSize = CGSize(width: 1200, height: 1600)
+        
+        guard let resizedImage = resizeImage(image, targetSize: standardSize),
+              let cgImage = resizedImage.cgImage else {
+            print("Failed to prepare image for recognition.")
+            return
+        }
+
         let request = VNRecognizeTextRequest { request, error in
             if let error = error {
                 print("Error recognizing text: \(error.localizedDescription)")
@@ -315,7 +360,7 @@ struct ScanView: View {
             
             self.recepit.recepitId = self.randomUUID.uuidString
             self.recepit.date = Date()
-            self.recepit.recepitImage = image.resetImgSize(maxSizeKB: 100)
+            self.recepit.recepitImage = resizedImage.resetImgSize(maxSizeKB: 100)
             
         }
         
@@ -326,7 +371,7 @@ struct ScanView: View {
             print("Error performing text recognition: \(error.localizedDescription)")
         }
     }
-    
+
 
 
     func gptCate(){

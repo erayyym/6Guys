@@ -1,0 +1,18 @@
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/BarChart.swift":
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/BarChart.dia"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/BarChart.swiftdeps"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/BarChart.o"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/BarChart.swiftconstvalues"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/BarChart.d"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ScanView.swift":
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/ScanView.d"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/ScanView.swiftdeps"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/ScanView.swiftconstvalues"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/ScanView.o"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/ScanView.dia"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/model/gptapi.swift":
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/gptapi.swiftdeps"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/gptapi.d"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/gptapi.o"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/gptapi.swiftconstvalues"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphonesimulator/PocketLedger.build/Objects-normal/arm64/gptapi.dia"

@@ -1,0 +1,18 @@
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ReceiptItemView.swift":
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptItemView.o"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptItemView.swiftdeps"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptItemView.swiftconstvalues"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptItemView.d"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ReceiptItemView.dia"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/model/PersistenceController.swift":
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/PersistenceController.o"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/PersistenceController.swiftconstvalues"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/PersistenceController.d"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/PersistenceController.swiftdeps"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/PersistenceController.dia"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/MainView.swift":
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/MainView.swiftconstvalues"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/MainView.dia"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/MainView.o"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/MainView.swiftdeps"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/MainView.d"

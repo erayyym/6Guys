@@ -16,6 +16,10 @@
       },
       {
         "comment": "",
+        "key": "Set Goal (How much money (%) you want to save compared to last month?)"
+      },
+      {
+        "comment": "",
         "key": "Goal"
       },
       {
@@ -25,6 +29,14 @@
       {
         "comment": "",
         "key": "Due Date"
+      },
+      {
+        "comment": "",
+        "key": "Percent"
+      },
+      {
+        "comment": "",
+        "key": "every few days"
       },
       {
         "comment": "",

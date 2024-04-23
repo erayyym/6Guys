@@ -5,6 +5,26 @@
       {
         "comment": "",
         "key": "Financial Goals"
+      },
+      {
+        "comment": "",
+        "key": "Delete"
+      },
+      {
+        "comment": "",
+        "key": "Edit"
+      },
+      {
+        "comment": "",
+        "key": "Fixed"
+      },
+      {
+        "comment": "",
+        "key": "Percent"
+      },
+      {
+        "comment": "",
+        "key": "Frequency"
       }
     ]
   },

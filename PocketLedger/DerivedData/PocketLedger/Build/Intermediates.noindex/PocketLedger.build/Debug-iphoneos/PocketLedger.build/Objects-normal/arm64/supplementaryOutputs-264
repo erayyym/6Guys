@@ -1,0 +1,18 @@
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/ImageRecognizer.swift":
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImageRecognizer.swiftdeps"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImageRecognizer.swiftconstvalues"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImageRecognizer.o"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImageRecognizer.dia"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/ImageRecognizer.d"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/gptAnalysis/AnalysisView.swift":
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AnalysisView.o"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AnalysisView.swiftconstvalues"
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AnalysisView.swiftdeps"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AnalysisView.dia"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AnalysisView.d"
+"/Users/carolmyr/pocketLe/PocketLedger/PocketLedger/FinancialGoals/AddFinancialGoalView.swift":
+  swift-dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AddFinancialGoalView.swiftdeps"
+  object: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AddFinancialGoalView.o"
+  diagnostics: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AddFinancialGoalView.dia"
+  const-values: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AddFinancialGoalView.swiftconstvalues"
+  dependencies: "/Users/carolmyr/pocketLe/PocketLedger/DerivedData/PocketLedger/Build/Intermediates.noindex/PocketLedger.build/Debug-iphoneos/PocketLedger.build/Objects-normal/arm64/AddFinancialGoalView.d"
