@@ -403,33 +403,51 @@ struct ScanView: View {
             }
     
     private func startRecording() {
+        // Create a new speech audio buffer recognition request.
         let recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        // Enable reporting of partial results to get real-time transcription.
         recognitionRequest.shouldReportPartialResults = true
+        // Obtain the shared audio session instance.
         let audioSession = AVAudioSession.sharedInstance()
         do {
+            // Set the audio session category for recording, set the mode to measurement,
+            // and allow other audio to duck (lower volume).
             try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
+            // Activate the audio session and notify other apps when audio session deactivates.
             try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         } catch {
+            // Print the error if audio session configuration fails.
             print("Audio session error: \(error.localizedDescription)")
         }
         
+        // Retrieve the audio input node associated with the audio session.
         let inputNode = audioEngine.inputNode
+        // Get the output format of the audio from the input node.
         let recordingFormat = inputNode.outputFormat(forBus: 0)
         
+        // Install an audio tap on the input node for capturing the audio.
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, _) in
+            // Append audio buffer to the speech recognition request.
             recognitionRequest.append(buffer)
         }
         
+        // Prepare the audio engine for starting.
         audioEngine.prepare()
         do {
+            // Start the audio engine to process the audio input.
             try audioEngine.start()
         } catch {
+            // Print the error if starting the audio engine fails.
             print("Audio engine error: \(error.localizedDescription)")
         }
         
+        // Start a recognition task with the audio data to transcribe the spoken words.
         let recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { (result, _) in
+            // Check if there is a transcription result.
             guard let result = result else { return }
+            // Update the transcription text with the latest best transcription.
             self.speechText = result.bestTranscription.formattedString
+            // If the result is the final transcription, stop the recording.
             if result.isFinal {
                 self.stopRecording()
             }
@@ -437,18 +455,21 @@ struct ScanView: View {
     }
     
     private func stopRecording() {
+        // Stop the audio engine.
         audioEngine.stop()
+        // Remove the audio tap from the input node to stop capturing audio.
         audioEngine.inputNode.removeTap(onBus: 0)
         
-        
+        // Check if there is a current editing index for updating receipt data.
         if let editingIndex = editingIndex {
+            // If the spoken text can be converted to a number and is meant for editing price.
             if  let number = Double(speechText),  self.isEditingPrice {
-                self.receiptItems[editingIndex].price = number                
+                // Update the price of the receipt item at the current editing index.
+                self.receiptItems[editingIndex].price = number
             } else {
+                // Update the name of the receipt item at the current editing index with the spoken text.
                 self.receiptItems[editingIndex].name = speechText
-                
             }
-            
         }
     }
 
