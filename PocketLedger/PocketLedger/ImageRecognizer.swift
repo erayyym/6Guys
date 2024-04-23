@@ -8,7 +8,7 @@ class ImageRecognizer: ObservableObject {
     @Published var result: String = ""
     private let imagePredictor = ImagePredictor()
     @State var predictionsToShow = 1
-
+    //https://developer.apple.com/documentation/vision/classifying_images_with_vision_and_core_ml
     func recognizePicture(_ image: UIImage) {
         do {
             try self.imagePredictor.makePredictions(for: image, completionHandler: imagePredictionHandler)
