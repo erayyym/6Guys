@@ -69,6 +69,7 @@ class ImagePredictor {
     /// Generates an image classification prediction for a photo.
     /// - Parameter photo: An image, typically of an object or a scene.
     /// - Tag: makePredictions
+    /// https://developer.apple.com/documentation/vision/classifying_images_with_vision_and_core_ml
     func makePredictions(for photo: UIImage, completionHandler: @escaping ImagePredictionHandler) throws {
         let orientation = CGImagePropertyOrientation(photo.imageOrientation)
 

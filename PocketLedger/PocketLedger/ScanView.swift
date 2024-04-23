@@ -51,7 +51,8 @@ struct ScanView: View {
     
     var body: some View {
         NavigationView {
-            
+//        https://developer.apple.com/documentation/swiftui/geometryreader
+    //get relative location of the image uploaded and prepared to create annotation using relative location for receipt item name/price entry
             GeometryReader { proxy in
                 VStack {
                     ScrollView {
